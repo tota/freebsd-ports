@@ -158,6 +158,7 @@ exaddos:*:285:285::0:0:exaddos daemon user:/nonexistent:/usr/sbin/nologin
 backuppc:*:300:300::0:0:BackupPC pseudo-user:/nonexistent:/usr/sbin/nologin
 _sphinx:*:312:312::0:0:Sphinxsearch Owner:/nonexistent:/usr/sbin/nologin
 dkfilter:*:325:325::0:0:DK Filter Owner:/nonexistent:/usr/sbin/nologin
+gitlab:*:333:333::0:0:GitLab:/home/gitlab:/bin/sh
 _pma:*:336:80::0:0:phpMyAdmin Owner:/nonexistent:/usr/sbin/nologin
 daapd:*:337:337::0:0:daapd User:/nonexistent:/usr/sbin/nologin
 murmur:*:338:338::0:0:& User:/nonexistent:/usr/sbin/nologin

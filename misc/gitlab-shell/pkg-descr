@@ -1,0 +1,5 @@
+GitLab Shell is an application that allows you to execute git
+commands and provide ssh access to git repositories. It is not a
+unix shell nor a replacement for Bash or Zsh.
+
+WWW: https://github.com/gitlabhq/gitlab-shell
