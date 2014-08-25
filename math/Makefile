@@ -17,6 +17,7 @@
     SUBDIR += R-cran-SuppDists
     SUBDIR += R-cran-Zelig
     SUBDIR += R-cran-bdsmatrix
+    SUBDIR += R-cran-brglm
     SUBDIR += R-cran-car
     SUBDIR += R-cran-coda
     SUBDIR += R-cran-deldir
