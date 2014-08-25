@@ -1,0 +1,6 @@
+BradleyTerry2 is a package designed to facilitate the specification
+and fitting of Bradley-Terry models for pair comparison data,
+including structured versions where there are explanatory variables
+predicting the latent "ability" (or "worth") parameters.
+
+WWW: http://cran.r-project.org/web/packages/BradleyTerry2/
