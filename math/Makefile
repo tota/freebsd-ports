@@ -36,6 +36,7 @@
     SUBDIR += R-cran-mvtnorm
     SUBDIR += R-cran-nnls
     SUBDIR += R-cran-outliers
+    SUBDIR += R-cran-profileModel
     SUBDIR += R-cran-psych
     SUBDIR += R-cran-quadprog
     SUBDIR += R-cran-sandwich
