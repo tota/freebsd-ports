@@ -2,14 +2,18 @@
 # $FreeBSD$
 
 PORTNAME=	gettext
-PORTVERSION=	2.3.1
+PORTVERSION=	3.1.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	knu@FreeBSD.org
 COMMENT=	Ruby implementation of the gettext library
 
-RUN_DEPENDS=	rubygem-locale>=2.0.5:${PORTSDIR}/devel/rubygem-locale
+LICENSE=	RUBY LGPL3
+LICENSE_COMB=	dual
+
+RUN_DEPENDS=	rubygem-locale>=2.0.5:${PORTSDIR}/devel/rubygem-locale \
+		rubygem-text>0:${PORTSDIR}/textproc/rubygem-text
 
 USES=	shebangfix
 USE_RUBY=	yes
