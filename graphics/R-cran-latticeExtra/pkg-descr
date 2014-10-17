@@ -1,0 +1,6 @@
+latticeExtra is an R package (i.e. a package for the R statistical
+computing environment), providing functions for generating statistical
+graphics. It extends the Lattice framework (lattice package), which
+is an implementation of Trellis graphics in R.
+
+WWW: http://latticeextra.r-forge.r-project.org/
