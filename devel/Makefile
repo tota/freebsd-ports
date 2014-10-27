@@ -4414,6 +4414,7 @@
     SUBDIR += rubygem-listen
     SUBDIR += rubygem-little_plugger
     SUBDIR += rubygem-locale
+    SUBDIR += rubygem-locale208
     SUBDIR += rubygem-lockfile
     SUBDIR += rubygem-logging
     SUBDIR += rubygem-logster
