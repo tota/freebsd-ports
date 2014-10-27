@@ -2,12 +2,15 @@
 # $FreeBSD$
 
 PORTNAME=	locale
-PORTVERSION=	2.0.8
+PORTVERSION=	2.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	knu@FreeBSD.org
 COMMENT=	Pure ruby library to support locales
+
+LICENSE=	RUBY LGPL3
+LICENSE_COMB=	dual
 
 USE_RUBY=	yes
 USE_RUBYGEMS=	yes
