@@ -6,17 +6,24 @@ PORTVERSION=	0.9.15
 PORTREVISION=	2
 CATEGORIES=	irc ruby
 MASTER_SITES=	http://ruby-rbot.org/download/
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	bdrewery@FreeBSD.org
 COMMENT=	Ruby IRC bot similar to infobot
+
+LICENSE=	MIT GPLv2
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/bdb.so:${PORTSDIR}/databases/ruby-bdb \
 		rubygem-gettext>=1.93.0:${PORTSDIR}/devel/rubygem-gettext
 
 USE_RUBY=	yes
 USE_RUBY_SETUP=	yes
+USES=	shebangfix tar:tgz
+
 CONFIGURE_ARGS=	--prefix=${PREFIX}
+
+SHEBANG_FILES=	bin/rbot-remote
 
 PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
