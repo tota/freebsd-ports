@@ -12,6 +12,7 @@
     SUBDIR += R-cran-LearnBayes
     SUBDIR += R-cran-MCMCpack
     SUBDIR += R-cran-RHmm
+    SUBDIR += R-cran-RSNNS
     SUBDIR += R-cran-RSvgDevice
     SUBDIR += R-cran-RcppArmadillo
     SUBDIR += R-cran-SuppDists
