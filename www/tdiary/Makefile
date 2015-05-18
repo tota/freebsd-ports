@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	tdiary
-PORTVERSION=	4.0.5
+PORTVERSION=	4.1.2
 CATEGORIES?=	www ruby
 MASTER_SITES=	http://www.tdiary.org/download/
 DISTNAME=	${PORTNAME}-full-v${PORTVERSION}
@@ -40,7 +40,7 @@ DOCFILES=	HOWTO-authenticate-in-rack HOWTO-make-io \
 		README UPGRADE
 HTML=	${DOCFILES:S/$/.html/}
 MD=	${DOCFILES:S/$/.md/}
-PORTDOCS=	ChangeLog doc.css ${HTML} ${MD}
+PORTDOCS=	ChangeLog ${HTML} ${MD}
 
 PLIST_SUB=	TDIARY_SCRIPT=${TDIARY_SCRIPT} \
 		WWWOWN=${WWWOWN} \
@@ -48,7 +48,7 @@ PLIST_SUB=	TDIARY_SCRIPT=${TDIARY_SCRIPT} \
 SUB_FILES=	pkg-message tdiaryinst.rb
 SUB_LIST+=	TDIARY_LANG=${TDIARY_LANG} \
 		TDIARY_SCRIPT=${TDIARY_SCRIPT}
-WRKSRC=		${WRKDIR}/${PORTNAME}-v${PORTVERSION}.1
+WRKSRC=		${WRKDIR}/${PORTNAME}-v${PORTVERSION}
 DOCSDIR=	${PREFIX}/share/doc/${PKGBASE}
 WWWDIR=		${PREFIX}/www/${PKGBASE}
 
@@ -76,16 +76,13 @@ pre-patch:
 	@${RM} ${WRKSRC}/tdiary.gemspec
 	@${RM} ${WRKSRC}/tmp/.gitkeep
 	@${RM} -rf ${WRKSRC}/.bundle
-	@${RM} -r ${WRKSRC}/misc/lib/bundler-1.7.2
+	@${RM} -r ${WRKSRC}/misc/lib/bundler-1.7.12
 	@${RM} -r ${WRKSRC}/public
 	@${RM} -r ${WRKSRC}/spec
 	@${RM} -r ${WRKSRC}/test
 	@${RM} -r ${WRKSRC}/vendor
 	@${MV} ${WRKSRC}/ChangeLog ${WRKSRC}/doc
 	@${MV} ${WRKSRC}/README.md ${WRKSRC}/doc
-
-post-patch:
-	@${RUBY} -i -pe "sub %r|(.*< ::Rack::Request)|, %Q|\trequire 'rack'\n\\\1|" ${WRKSRC}/tdiary/request.rb
 
 pre-install:
 	@${SED} -e 's,#!/usr/bin/env ruby,#!${RUBY},' \
@@ -103,7 +100,6 @@ do-install:
 x-generate-plist: stage
 	${ECHO_CMD} bin/%%TDIARY_SCRIPT%% > pkg-plist.new
 	${FIND} ${STAGEDIR}${WWWDIR} -type f -o -type l | ${SORT} | ${SED} -e 's,${STAGEDIR}${WWWDIR},%%WWWDIR%%,g' >> pkg-plist.new
-	${FIND} ${STAGEDIR}${WWWDIR} -type d -depth | ${SORT} -r | ${SED} -e 's,${STAGEDIR}${WWWDIR},@dirrm %%WWWDIR%%,g' >> pkg-plist.new
 	${ECHO_CMD} @exec mkdir -p %D/%%WWWDIR%%/tmp >> pkg-plist.new
 	${ECHO_CMD} @exec chown -R %%WWWOWN%%:%%WWWGRP%% %D/%%WWWDIR%% >> pkg-plist.new
 
