@@ -3037,6 +3037,10 @@ Notes:
 	<name>mailman-with-htdig</name>
 	<range><lt>2.1.20</lt></range>
       </package>
+      <package>
+	<name>ja-mailman</name>
+	<range><lt>2.1.14.j7_2,1</lt></range>
+      </package>
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
@@ -3058,6 +3062,7 @@ Notes:
     <dates>
       <discovery>2015-03-27</discovery>
       <entry>2015-04-09</entry>
+      <modified>2015-06-09</modified>
     </dates>
   </vuln>
 
