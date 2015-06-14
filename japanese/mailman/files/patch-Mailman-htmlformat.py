@@ -12,7 +12,7 @@
  DELIVERED_BY = mm_cfg.DELIVERED_BY         # 'mailman.jpg'
  PYTHON_POWERED = mm_cfg.PYTHON_POWERED     # 'PythonPowered.png'
 -GNU_HEAD = mm_cfg.GNU_HEAD                 # 'gnu-head-tiny.jpg'
-+FREEBSD_POWERED = mm_cfg.FREEBSD_POWERED   # 'powerlogo.gif'
++FREEBSD_POWERED = mm_cfg.FREEBSD_POWERED   # 'powerlogo.png'
  
  
  def MailmanLogo():
