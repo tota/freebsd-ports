@@ -53,8 +53,6 @@ PLIST_SUB=	MMDIR=${MM_DIR} IMGDIR=${IMGDIR}
 SUB_FILES=	pkg-message pkg-install pkg-deinstall
 SUB_LIST=	MAILMANDIR=${MAILMANDIR} USER=${MM_USERNAME} GROUP=${MM_GROUPNAME}
 
-IMGFILES=	PythonPowered.png mailman.jpg mm-icon.png
-
 PORTDOCS=	ACKNOWLEDGMENTS BUGS FAQ INSTALL NEWS NEWS.japan.utf-8 \
 		README README-I18N.en README.CONTRIB README.NETSCAPE \
 		README.USERAGENT README.japan.utf-8 STYLEGUIDE.txt \
@@ -128,15 +126,15 @@ pre-everything::
 	@${ECHO} ""
 
 post-patch:
-	@${REINPLACE_CMD} -e 's#%%LOCALBASE%%#${LOCALBASE}#g' \
+	${REINPLACE_CMD} -e 's#%%LOCALBASE%%#${LOCALBASE}#g' \
 	  ${WRKSRC}/Mailman/Defaults.py.in
-	@${REINPLACE_CMD} -e 's/^0,5,10/#&/' ${WRKSRC}/cron/crontab.in.in
+	${REINPLACE_CMD} -e 's/^0,5,10/#&/' ${WRKSRC}/cron/crontab.in.in
 
 pre-configure:
-	@${ECHO} "DEFAULT_SERVER_LANGUAGE = 'ja'" >> ${WRKSRC}/Mailman/mm_cfg.py.dist.in
-	@${ECHO} "GLOBAL_PIPELINE.insert(1, 'iso2022jpfix')" >> ${WRKSRC}/Mailman/mm_cfg.py.dist.in
+	${ECHO} "DEFAULT_SERVER_LANGUAGE = 'ja'" >> ${WRKSRC}/Mailman/mm_cfg.py.dist.in
+	${ECHO} "GLOBAL_PIPELINE.insert(1, 'iso2022jpfix')" >> ${WRKSRC}/Mailman/mm_cfg.py.dist.in
 .if ${PORT_OPTIONS:MPOSTFIX}
-	@${ECHO} "MTA = 'Postfix'" >> ${WRKSRC}/Mailman/mm_cfg.py.dist.in
+	${ECHO} "MTA = 'Postfix'" >> ${WRKSRC}/Mailman/mm_cfg.py.dist.in
 .endif
 
 post-install:
@@ -153,13 +151,11 @@ post-install:
 	    -f -d ${MAILMANDIR}/${dir} ${dir})
 .endfor
 	@${RM} -f ${STAGEDIR}${MAILMANDIR}/pythonlib/*.egg-info
-	# mm_cfg.py is handled by pkg-plist:
+	@# mm_cfg.py is handled by pkg-plist:
 	@${RM} -f ${STAGEDIR}${MAILMANDIR}/Mailman/mm_cfg.py
 	@${RM} -f ${STAGEDIR}${MAILMANDIR}/Mailman/mm_cfg.pyc
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${IMGDIR}
-.for imgfile in ${IMGFILES}
-	${CP} ${STAGEDIR}${MAILMANDIR}/icons/${imgfile} ${STAGEDIR}${PREFIX}/${IMGDIR}
-.endfor
+	${CP} -p ${STAGEDIR}${MAILMANDIR}/icons/* ${STAGEDIR}${PREFIX}/${IMGDIR}
 	uudecode -p ${FILESDIR}/powerlogo.gif.uue > \
 	  ${STAGEDIR}${PREFIX}/${IMGDIR}/powerlogo.gif
 .if ${PORT_OPTIONS:MDOCS}
@@ -172,15 +168,6 @@ post-install:
 .endif
 	@${MKDIR} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
 	${ECHO} "This marker file ensures that Python's upgrade-site-packages handles ${PKGNAME}." >${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/mailman-info.txt
-.if ${PORT_OPTIONS:MPOSTFIX}
-	@if [ "x`${LOCALBASE}/sbin/postconf -h myhostname`" != "xlocalhost" ]; then \
-		${ECHO_CMD} ""; \
-		${ECHO_CMD} "Your Postfix hostname is non-default."; \
-		${ECHO_CMD} -n "You must add \"SMTPHOST = "; \
-		${ECHO_CMD} -n `${LOCALBASE}/sbin/postconf -h myhostname`; \
-		${ECHO_CMD} "\" to the bottom of mm_cfg.py."; \
-		${ECHO_CMD} ""; \
-		fi
-.endif
+	${INSTALL_SCRIPT} ${PKGINSTALL} ${STAGEDIR}${MAILMANDIR}/bin/FreeBSD-post-install
 
 .include <bsd.port.mk>
