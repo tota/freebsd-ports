@@ -67,14 +67,15 @@ PORTDOCS=	ACKNOWLEDGMENTS BUGS FAQ INSTALL NEWS NEWS.japan.utf-8 \
 OPTIONS_DEFINE=	DOCS NAMAZU2
 
 OPTIONS_SINGLE=	MTA
-OPTIONS_SINGLE_MTA=	SENDMAIL EXIM4 POSTFIX COURIER
+OPTIONS_SINGLE_MTA=	COURIER EXIM4 OPENSMTPD POSTFIX SENDMAIL
 
+COURIER_DESC=	for use with courier
+EXIM4_DESC=	for use with exim4
+OPENSMTPD_DESC=	for use with opensmtpd - EXPERIMENTAL -
+POSTFIX_DESC=	for use with postfix
+SENDMAIL_DESC=	for use with sendmail
 NAMAZU2_DESC=	Make private archives searchable with namazu2
 MTA_DESC=	Integrate with which MTA?
-SENDMAIL_DESC=	for use with sendmail
-EXIM4_DESC=	for use with exim4
-POSTFIX_DESC=	for use with postfix
-COURIER_DESC=	for use with courier
 
 OPTIONS_DEFAULT=	SENDMAIL
 
@@ -89,14 +90,18 @@ MAIL_GID?=	mail
 .endif
 
 .if ${PORT_OPTIONS:MPOSTFIX}
-RUN_DEPENDS+=	${LOCALBASE}/sbin/postconf:${PORTSDIR}/mail/postfix
 BUILD_DEPENDS+=	${LOCALBASE}/sbin/postconf:${PORTSDIR}/mail/postfix
+RUN_DEPENDS+=	${LOCALBASE}/sbin/postconf:${PORTSDIR}/mail/postfix
 MAIL_GID?=	mailman
 EXTRA_PATCHES+=	${FILESDIR}/postfix-verp.diff
 .endif
 
 .if ${PORT_OPTIONS:MCOURIER}
 MAIL_GID?=	courier
+.endif
+
+.if ${PORT_OPTIONS:MOPENSMTPD}
+MAIL_GID?=	_smtpd
 .endif
 
 .if ${PORT_OPTIONS:MNAMAZU2}
