@@ -151,7 +151,7 @@ post-install:
 	    -f -d ${MAILMANDIR}/${dir} ${dir})
 .endfor
 	@${RM} -f ${STAGEDIR}${MAILMANDIR}/pythonlib/*.egg-info
-	@# mm_cfg.py is handled by pkg-plist:
+	@# mm_cfg.py is handled by pkg-plist, no need to archive a copy:
 	@${RM} -f ${STAGEDIR}${MAILMANDIR}/Mailman/mm_cfg.py
 	@${RM} -f ${STAGEDIR}${MAILMANDIR}/Mailman/mm_cfg.pyc
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${IMGDIR}
