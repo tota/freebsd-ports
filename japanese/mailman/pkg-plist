@@ -2375,7 +2375,7 @@
 @dir %%MMDIR%%/cgi-bin
 @dir %%MMDIR%%/bin
 @dir %%MMDIR%%/archives/public
-@dir %%MMDIR%%/archives/private
+@dir(,,02770) %%MMDIR%%/archives/private
 @dir %%MMDIR%%/archives
 @dir %%MMDIR%%/Mailman/Queue
 @dir %%MMDIR%%/Mailman/MTA
