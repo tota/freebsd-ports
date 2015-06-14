@@ -21,12 +21,12 @@ CONFLICTS=	mailman-2.1.*
 
 PORTSCOUT=	limit:.*\.j\d+$$
 
-USE_AUTOTOOLS=	autoconf
-USES=		cpe gettext python:2 tar:tgz
+USES=		autoreconf cpe fakeroot gettext python:2 tar:tgz
 USE_RC_SUBR=	mailman
 
 CPE_VENDOR=	gnu
 
+GNU_CONFIGURE=	yes
 GNU_CONFIGURE_PREFIX=	${MAILMANDIR}
 CONFIGURE_ARGS+=--with-python=${PYTHON_CMD} \
 		--with-username=${MM_USERNAME} \
