@@ -38,6 +38,7 @@
     SUBDIR += R-cran-outliers
     SUBDIR += R-cran-psych
     SUBDIR += R-cran-quadprog
+    SUBDIR += R-cran-rngtools
     SUBDIR += R-cran-sandwich
     SUBDIR += R-cran-sm
     SUBDIR += R-cran-sp
