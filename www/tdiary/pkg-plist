@@ -1170,6 +1170,8 @@ bin/%%TDIARY_SCRIPT%%
 %%WWWDIR%%/theme/lr/README
 %%WWWDIR%%/theme/lr/lr.css
 %%WWWDIR%%/theme/lr/lr.png
+%%WWWDIR%%/theme/machu/README
+%%WWWDIR%%/theme/machu/machu.css
 %%WWWDIR%%/theme/madrascheck/README
 %%WWWDIR%%/theme/madrascheck/madras-blue.jpg
 %%WWWDIR%%/theme/madrascheck/madras.png
