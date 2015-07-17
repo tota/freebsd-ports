@@ -4,10 +4,9 @@
 PORTNAME=	mecab-ipadic
 DISTVERSION=	2.7.0-20070801
 CATEGORIES=	japanese textproc
-PKGNAMEPREFIX=	ja-
 
 MAINTAINER=	yasu@utahime.org
-COMMENT=	The "meta-port" of MeCab IPA dictionary
+COMMENT=	MeCab IPA dictionary meta-port
 
 USES=	metaport
 OPTIONS_RADIO=	CHARSET
