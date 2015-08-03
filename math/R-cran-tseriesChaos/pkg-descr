@@ -1,0 +1,5 @@
+Routines for the analysis of nonlinear time series. This work is
+largely inspired by the TISEAN project, by Rainer Hegger, Holger
+Kantz and Thomas Schreiber
+
+WWW: https://cran.r-project.org/web/packages/tseriesChaos/
