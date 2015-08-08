@@ -2,10 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	koruri
-PORTVERSION=	20141224
-PORTREVISION=	2
+PORTVERSION=	20150701
+DISTVERSIONPREFIX=	Koruri-
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SFJP/koruri/62469
 PKGNAMEPREFIX=	ja-font-
 DISTNAME=	Koruri-${PORTVERSION}
 
@@ -13,9 +12,14 @@ MAINTAINER=	meta+ports@vmeta.jp
 COMMENT=	Koruri Japanese TrueType fonts
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		fonts tar:xz
+USE_GITHUB=	yes
+GH_ACCOUNT=	Koruri
+GH_PROJECT=	Koruri
 NO_BUILD=	yes
+NO_ARCH=	yes
 PKGINSTALL=	${WRKDIR}/pkg-install
 PKGDEINSTALL=	${WRKDIR}/pkg-install
 SUB_FILES=	pkg-install
