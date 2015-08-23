@@ -13,6 +13,7 @@
     SUBDIR += R-cran-gmm
     SUBDIR += R-cran-lmtest
     SUBDIR += R-cran-plm
+    SUBDIR += R-cran-portfolio
     SUBDIR += R-cran-quantmod
     SUBDIR += R-cran-strucchange
     SUBDIR += R-cran-timeDate
