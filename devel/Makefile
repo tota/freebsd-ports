@@ -3850,6 +3850,7 @@
     SUBDIR += py-Products.statusmessages
     SUBDIR += py-Products.validation
     SUBDIR += py-RPyC
+    SUBDIR += py-ReParser
     SUBDIR += py-Record
     SUBDIR += py-SymbolType
     SUBDIR += py-TGScheduler
