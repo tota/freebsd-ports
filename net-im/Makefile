@@ -125,6 +125,7 @@
     SUBDIR += psi
     SUBDIR += psimedia
     SUBDIR += pwytter
+    SUBDIR += py-hangups
     SUBDIR += py-jabber
     SUBDIR += py-jabberbot
     SUBDIR += py-libturpial
