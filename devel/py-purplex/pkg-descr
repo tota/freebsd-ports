@@ -1,0 +1,4 @@
+A pure-Python lexer and parser. Together they provide an experience
+reminiscent of yacc or bison, but of course in a more Pythonic way.
+
+WWW: https://pypi.python.org/pypi/purplex

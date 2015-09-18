@@ -4144,6 +4144,7 @@
     SUBDIR += py-protocols-devel
     SUBDIR += py-ptrace
     SUBDIR += py-pudb
+    SUBDIR += py-purplex
     SUBDIR += py-px
     SUBDIR += py-py
     SUBDIR += py-pycalendar
