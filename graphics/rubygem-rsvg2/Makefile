@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	rsvg2
-PORTVERSION=	2.2.5
+PORTVERSION=	3.0.7
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

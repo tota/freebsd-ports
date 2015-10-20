@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	gnome2
-PORTVERSION=	2.2.5
+PORTVERSION=	3.0.7
 CATEGORIES=	x11 rubygems
 CATEGORIES=	x11 gnome rubygems
 PKGNAMEPREFIX=	rubygem-
