@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	tdiary
-PORTVERSION=	4.1.3
+PORTVERSION=	4.2.0
 CATEGORIES?=	www ruby
 MASTER_SITES=	http://www.tdiary.org/download/
 DISTNAME=	${PORTNAME}-full-v${PORTVERSION}
@@ -76,7 +76,7 @@ pre-patch:
 	@${RM} ${WRKSRC}/tdiary.gemspec
 	@${RM} ${WRKSRC}/tmp/.gitkeep
 	@${RM} -rf ${WRKSRC}/.bundle
-	@${RM} -r ${WRKSRC}/misc/lib/bundler-1.10.5
+	@${RM} -r ${WRKSRC}/misc/lib/bundler-1.10.6
 	@${RM} -r ${WRKSRC}/public
 	@${RM} -r ${WRKSRC}/spec
 	@${RM} -r ${WRKSRC}/test

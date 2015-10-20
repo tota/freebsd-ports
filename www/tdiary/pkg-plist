@@ -11,6 +11,7 @@ bin/%%TDIARY_SCRIPT%%
 %%WWWDIR%%/js/02edit.coffee
 %%WWWDIR%%/js/02edit.js
 %%WWWDIR%%/js/amazon.js
+%%WWWDIR%%/js/amazon_bitly.js
 %%WWWDIR%%/js/calendar3.js
 %%WWWDIR%%/js/caretposition.js
 %%WWWDIR%%/js/category.js
@@ -1882,17 +1883,6 @@ bin/%%TDIARY_SCRIPT%%
 %%WWWDIR%%/views/diary.rhtml
 %%WWWDIR%%/views/footer.rhtml
 %%WWWDIR%%/views/header.rhtml
-%%WWWDIR%%/views/i.category.rhtml
-%%WWWDIR%%/views/i.conf.rhtml
-%%WWWDIR%%/views/i.day.rhtml
-%%WWWDIR%%/views/i.diary.rhtml
-%%WWWDIR%%/views/i.footer.rhtml
-%%WWWDIR%%/views/i.header.rhtml
-%%WWWDIR%%/views/i.latest.rhtml
-%%WWWDIR%%/views/i.month.rhtml
-%%WWWDIR%%/views/i.search.rhtml
-%%WWWDIR%%/views/i.update.rhtml
-%%WWWDIR%%/views/i.update.rhtml.en
 %%WWWDIR%%/views/latest.rhtml
 %%WWWDIR%%/views/mail.rtxt
 %%WWWDIR%%/views/mail.rtxt.en
