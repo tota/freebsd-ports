@@ -1,0 +1,4 @@
+A 'Doxygen'-like in-source documentation system for Rd, collation,
+and 'NAMESPACE' files.
+
+WWW: https://cran.r-project.org/web/packages/roxygen2/
