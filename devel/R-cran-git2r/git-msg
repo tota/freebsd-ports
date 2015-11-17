@@ -1,0 +1,13 @@
+-
+diff --git a/devel/Makefile b/devel/Makefile
+index b9144a5..d6c4b40 100644
+--- a/devel/Makefile
++++ b/devel/Makefile
+@@ -25,6 +25,7 @@
+     SUBDIR += R-cran-foreach
+     SUBDIR += R-cran-gbm
+     SUBDIR += R-cran-gdata
++    SUBDIR += R-cran-git2r
+     SUBDIR += R-cran-glmnet
+     SUBDIR += R-cran-gsubfn
+     SUBDIR += R-cran-gtools
