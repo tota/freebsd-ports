@@ -2,10 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	swfed
-PORTVERSION=	0.62
-PORTREVISION=	3
+PORTVERSION=	0.63
 CATEGORIES=	graphics www
-MASTER_SITES=	SFJP/${PORTNAME}/60548
+MASTER_SITES=	SFJP/${PORTNAME}/62489
 PKGNAMEPREFIX=	php5-
 
 MAINTAINER=	yoya@awm.jp
@@ -13,14 +12,11 @@ COMMENT=	PHP extension to edit SWF file
 
 LICENSE=	PHP301
 
-DEPRECATED=	PHP 5.4 EOL reached
-EXPIRATION_DATE=	2016-01-15
-
 BUILD_DEPENDS=	re2c:${PORTSDIR}/devel/re2c
 LIB_DEPENDS=	libgif.so:${PORTSDIR}/graphics/giflib \
 		libpng.so:${PORTSDIR}/graphics/png
 
-DEFAULT_PHP_VER=	5
+DEFAULT_VERSIONS=	php=5
 USE_PHP=	zlib
 USE_PHPEXT=	yes
 
@@ -44,7 +40,6 @@ post-install:
 
 x-generate-plist: stage
 	${FIND} ${STAGEDIR}${WWWDIR} -type f | ${SORT} | ${SED} -e 's,${STAGEDIR}${WWWDIR},%%WWWDIR%%,g' > pkg-plist.new
-	${FIND} ${STAGEDIR}${WWWDIR} -type d -depth | ${SORT} -r | ${SED} -e 's,${STAGEDIR}${WWWDIR},@dirrm %%WWWDIR%%,g' >> pkg-plist.new
 	${ECHO} '@exec chown -R %%WWWOWN%%:%%WWWGRP%% %D/%%WWWDIR%%' >> pkg-plist.new
 
 .include <bsd.port.mk>
