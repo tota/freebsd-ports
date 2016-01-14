@@ -1,0 +1,5 @@
+This module is an adaptor for Spreadsheet::ParseExcel that reads
+XLSX files. For documentation about the various data that you can
+retrieve from these classes.
+
+WWW: http://search.cpan.org/dist/Spreadsheet-ParseXLSX/
