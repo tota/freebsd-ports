@@ -1,4 +1,6 @@
 bin/%%TDIARY_SCRIPT%%
+@owner %%WWWOWN%%
+@group %%WWWGRP%%
 %%WWWDIR%%/bin/tdiary
 %%WWWDIR%%/data/.htaccess
 %%WWWDIR%%/dot.htaccess
@@ -1890,7 +1892,5 @@ bin/%%TDIARY_SCRIPT%%
 %%WWWDIR%%/views/tdiary.rconf
 %%WWWDIR%%/views/update.rhtml
 %%WWWDIR%%/views/update.rhtml.en
-@owner %%WWWOWN%%
-@group %%WWWGRP%%
 @dir %%WWWDIR%%/data
 @dir %%WWWDIR%%/tmp
