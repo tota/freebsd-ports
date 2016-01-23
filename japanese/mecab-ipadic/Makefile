@@ -15,7 +15,7 @@ COMMENT?=	MeCab IPA dictionary meta-port
 USES=	metaport
 OPTIONS_RADIO=	CHARSET
 OPTIONS_RADIO_CHARSET=	EUCJP SHIFTJIS UTF8
-OPTIONS_DEFAULT=	UTF8
+OPTIONS_DEFAULT=	EUCJP
 
 EUCJP_DESC=	Use EUC-JP as dictionary charset.
 SHIFTJIS_DESC=	Use SHIFT-JIS as dictionary charset.
@@ -46,7 +46,7 @@ CONFIGURE_ARGS+=	--with-dicdir=${PREFIX}/lib/mecab/dic/ipadic
 CONFIGURE_ARGS+=	--with-charset=euc-jp
 CONFLICTS=	ja-mecab-ipadic-utf8-[0-9]* ja-mecab-ipadic-sjis-[0-9]*
 .elif ${PKGNAMESUFFIX:S,-,,} == "sjis"
-CONFIGURE_ARGS+=	--with-charset=shift_jis
+CONFIGURE_ARGS+=	--with-charset=shiftjis
 CONFLICTS=	ja-mecab-ipadic-eucjp-[0-9]* ja-mecab-ipadic-utf8-[0-9]*
 .elif ${PKGNAMESUFFIX:S,-,,} == "utf8"
 CONFIGURE_ARGS+=	--with-charset=utf-8
