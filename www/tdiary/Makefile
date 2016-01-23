@@ -104,9 +104,9 @@ x-generate-plist: stage
 	${ECHO_CMD} bin/%%TDIARY_SCRIPT%% > pkg-plist.new
 	${ECHO_CMD} @owner %%WWWOWN%% >> pkg-plist.new
 	${ECHO_CMD} @group %%WWWGRP%% >> pkg-plist.new
+	${FIND} ${STAGEDIR}${WWWDIR} -name "*.orig" -delete
 	${FIND} ${STAGEDIR}${WWWDIR} -type f -o -type l | ${SORT} | ${SED} -e 's,${STAGEDIR}${WWWDIR},%%WWWDIR%%,g' >> pkg-plist.new
-	${FIND} ${STAGEDIR}${WWWDIR} -type d -depth | ${SORT} -r | ${SED} -e 's,${STAGEDIR}${WWWDIR},@dir %%WWWDIR%%,g' >> pkg-plist.new
-	${ECHO_CMD} @owner >> pkg-plist.new
-	${ECHO_CMD} @group >> pkg-plist.new
+	${ECHO_CMD} @dir %%WWWDIR%%/data >> pkg-plist.new
+	${ECHO_CMD} @dir %%WWWDIR%%/tmp >> pkg-plist.new
 
 .include <bsd.port.mk>
