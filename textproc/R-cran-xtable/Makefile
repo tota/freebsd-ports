@@ -11,6 +11,6 @@ COMMENT=	Export tables to LaTeX or HTML
 
 LICENSE=	GPLv2+
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

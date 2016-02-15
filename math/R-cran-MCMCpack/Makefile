@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-cran-coda>0.11.3:${PORTSDIR}/math/R-cran-coda
 
 # Actually required 4.0 or later.
 USE_GCC=	any
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

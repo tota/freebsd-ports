@@ -11,6 +11,6 @@ COMMENT=	Functions for plotting graphical shapes, colors
 
 LICENSE=	GPLv3
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

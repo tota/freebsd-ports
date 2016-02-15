@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-cran-htmlwidgets>=0.5:${PORTSDIR}/www/R-cran-htmlwidgets \
 		R-cran-visNetwork>=0.1.2:${PORTSDIR}/graphics/R-cran-visNetwork \
 		R-cran-scales>=0.3.0:${PORTSDIR}/graphics/R-cran-scales
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

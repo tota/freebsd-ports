@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Epidemiological calculator
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

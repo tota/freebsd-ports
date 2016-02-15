@@ -11,6 +11,6 @@ COMMENT=	Registry infrastructure
 
 LICENSE=	GPLv2
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

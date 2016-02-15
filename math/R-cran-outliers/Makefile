@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Collection of some tests commonly used for identifying outliers
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

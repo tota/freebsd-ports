@@ -11,6 +11,6 @@ COMMENT=	Methods to convert R data to YAML and back
 
 LICENSE=	BSD3CLAUSE
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

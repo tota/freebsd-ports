@@ -11,6 +11,6 @@ COMMENT=	Boost C++ Header Files
 
 LICENSE=	BSL
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

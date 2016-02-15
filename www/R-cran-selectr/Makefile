@@ -14,6 +14,6 @@ LICENSE=	BSD3CLAUSE
 RUN_DEPENDS=	R-cran-XML>0:${PORTSDIR}/textproc/R-cran-XML \
 		R-cran-stringr>0:${PORTSDIR}/textproc/R-cran-stringr
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

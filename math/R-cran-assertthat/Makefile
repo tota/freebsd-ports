@@ -11,6 +11,6 @@ COMMENT=	Easy pre and post assertions
 
 LICENSE=	GPLv3
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

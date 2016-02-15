@@ -14,6 +14,6 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	R-cran-stringi>=0.4.1:${PORTSDIR}/textproc/R-cran-stringi \
 		R-cran-magrittr>0:${PORTSDIR}/devel/R-cran-magrittr
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

@@ -17,6 +17,6 @@ LICENSE_PERMS_CW=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 RUN_DEPENDS=	R-cran-colorspace>0:${PORTSDIR}/graphics/R-cran-colorspace
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

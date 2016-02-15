@@ -11,6 +11,6 @@ COMMENT=	Various R programming tools
 
 LICENSE=	GPLv2
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

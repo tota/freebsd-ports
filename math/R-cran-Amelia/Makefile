@@ -17,6 +17,6 @@ BUILD_DEPENDS=	R-cran-Rcpp>=0.11:${PORTSDIR}/devel/R-cran-Rcpp \
 RUN_DEPENDS=	R-cran-Rcpp>=0.11:${PORTSDIR}/devel/R-cran-Rcpp \
 		R-cran-RcppArmadillo>=0:${PORTSDIR}/math/R-cran-RcppArmadillo
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

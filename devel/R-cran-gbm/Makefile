@@ -11,6 +11,6 @@ COMMENT=	Extensions to AdaBoost algorithm
 
 LICENSE=	GPLv2
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

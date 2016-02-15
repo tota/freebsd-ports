@@ -11,6 +11,6 @@ COMMENT=	Classes with reference semantics
 
 LICENSE=	MIT
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

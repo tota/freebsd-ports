@@ -13,6 +13,6 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-cran-bit>=1.1.12:${PORTSDIR}/devel/R-cran-bit
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

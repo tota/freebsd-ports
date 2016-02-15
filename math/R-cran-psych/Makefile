@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	drue@therub.org
 COMMENT=	Psych package for the R project
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

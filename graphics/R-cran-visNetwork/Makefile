@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-cran-htmlwidgets>0:${PORTSDIR}/www/R-cran-htmlwidgets \
 		R-cran-jsonlite>0:${PORTSDIR}/converters/R-cran-jsonlite \
 		R-cran-magrittr>0:${PORTSDIR}/devel/R-cran-magrittr
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

@@ -15,6 +15,6 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	R-cran-zoo>0:${PORTSDIR}/math/R-cran-zoo \
 		R-cran-sandwich>0:${PORTSDIR}/math/R-cran-sandwich
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

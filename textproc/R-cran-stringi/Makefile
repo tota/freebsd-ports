@@ -13,6 +13,6 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libicui18n.so:${PORTSDIR}/devel/icu
 
-USES=	cran:auto-plist pkgconfig:build
+USES=	r-library pkgconfig:build
 
 .include <bsd.port.mk>

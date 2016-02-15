@@ -13,6 +13,6 @@ LICENSE=	GPLv2+
 
 RUN_DEPENDS=	R-cran-lme4>=1.1.10:${PORTSDIR}/math/R-cran-lme4
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

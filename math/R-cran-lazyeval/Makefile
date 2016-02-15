@@ -11,6 +11,6 @@ COMMENT=	Disciplined approach to non-standard evaluation
 
 LICENSE=	GPLv3
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

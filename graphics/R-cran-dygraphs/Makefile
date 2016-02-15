@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-cran-magrittr>0:${PORTSDIR}/devel/R-cran-magrittr \
 		R-cran-zoo>=1.7.10:${PORTSDIR}/math/R-cran-zoo \
 		R-cran-xts>=0.9.7:${PORTSDIR}/math/R-cran-xts
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

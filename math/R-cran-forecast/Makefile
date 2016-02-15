@@ -20,6 +20,6 @@ RUN_DEPENDS=	R-cran-zoo>0:${PORTSDIR}/math/R-cran-zoo \
 		R-cran-colorspace>0:${PORTSDIR}/graphics/R-cran-colorspace \
 		R-cran-RcppArmadillo>=0.2.35:${PORTSDIR}/math/R-cran-RcppArmadillo
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

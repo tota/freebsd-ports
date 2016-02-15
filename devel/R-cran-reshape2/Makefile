@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-cran-plyr>=1.8.1:${PORTSDIR}/devel/R-cran-plyr \
 		R-cran-stringr>0:${PORTSDIR}/textproc/R-cran-stringr \
 		R-cran-Rcpp>0:${PORTSDIR}/devel/R-cran-Rcpp
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

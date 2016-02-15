@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	R-cran-DBI>=0.3.1:${PORTSDIR}/databases/R-cran-DBI
 
 USE_MYSQL=	yes
-USES=	cran:auto-plist
+USES=	r-library
 
 post-patch:
 	@${REINPLACE_CMD} -e '/bin\//s|bash|sh|' ${WRKSRC}/configure

@@ -14,6 +14,6 @@ LICENSE=	GPLv2+
 RUN_DEPENDS=	R-cran-digest>0:${PORTSDIR}/security/R-cran-digest \
 		R-cran-Rcpp>0:${PORTSDIR}/devel/R-cran-Rcpp
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

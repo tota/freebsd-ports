@@ -13,6 +13,6 @@ COMMENT=	Functions for Bitwise operations
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

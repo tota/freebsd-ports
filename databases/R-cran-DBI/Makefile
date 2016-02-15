@@ -12,6 +12,6 @@ COMMENT=	R Database Interface
 LICENSE=	LGPL20 LGPL21 LGPL3
 LICENSE_COMB=	dual
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

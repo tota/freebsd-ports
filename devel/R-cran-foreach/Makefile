@@ -13,6 +13,6 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	R-cran-iterators>=1.0.0:${PORTSDIR}/devel/R-cran-iterators
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

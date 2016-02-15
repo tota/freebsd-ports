@@ -17,7 +17,7 @@ RUN_DEPENDS=	R-cran-magrittr>0:${PORTSDIR}/devel/R-cran-magrittr \
 		R-cran-NMF>0:${PORTSDIR}/math/R-cran-NMF \
 		R-cran-irlba>0:${PORTSDIR}/math/R-cran-irlba
 
-USES=	cran:auto-plist
+USES=	r-library
 USE_GNOME=	libxml2
 
 .include <bsd.port.pre.mk>

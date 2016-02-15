@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-cran-timeDate>0:${PORTSDIR}/finance/R-cran-timeDate \
 		R-cran-timeSeries>0:${PORTSDIR}/finance/R-cran-timeSeries \
 		R-cran-fBasics>=2100.78:${PORTSDIR}/finance/R-cran-fBasics
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

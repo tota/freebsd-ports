@@ -13,7 +13,7 @@ LICENSE=	LGPL3
 
 LIB_DEPENDS=	libnlopt.so:${PORTSDIR}/math/nlopt
 
-USES=	cran:auto-plist pkgconfig
+USES=	r-library pkgconfig
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/<<</</' ${WRKSRC}/configure

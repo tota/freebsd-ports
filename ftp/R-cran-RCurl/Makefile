@@ -15,6 +15,6 @@ BUILD_DEPENDS=	curl-config:${PORTSDIR}/ftp/curl
 RUN_DEPENDS=	R-cran-bitops>0:${PORTSDIR}/devel/R-cran-bitops
 LIB_DEPENDS=	libcurl.so:${PORTSDIR}/ftp/curl
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

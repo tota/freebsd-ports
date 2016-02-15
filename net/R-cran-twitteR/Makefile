@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-cran-bit64>0:${PORTSDIR}/devel/R-cran-bit64 \
 		R-cran-DBI>=0.3.1:${PORTSDIR}/databases/R-cran-DBI \
 		R-cran-httr>=1.0.0:${PORTSDIR}/www/R-cran-httr
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

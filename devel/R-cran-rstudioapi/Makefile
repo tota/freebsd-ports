@@ -11,6 +11,6 @@ COMMENT=	Safely Access the RStudio API
 
 LICENSE=	MIT
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

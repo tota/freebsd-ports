@@ -17,6 +17,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

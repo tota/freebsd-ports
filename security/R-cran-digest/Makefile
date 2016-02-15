@@ -11,6 +11,6 @@ COMMENT=	Create cryptographic hash digests of R objects
 
 LICENSE=	GPLv2
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

@@ -14,6 +14,6 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	R-cran-plyr>0:${PORTSDIR}/devel/R-cran-plyr
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

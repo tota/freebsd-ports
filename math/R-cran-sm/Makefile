@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${DISTVERSION}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Smoothing methods for nonparametric regression and density estimation
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

@@ -15,6 +15,6 @@ LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libpng.so:${PORTSDIR}/graphics/png
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

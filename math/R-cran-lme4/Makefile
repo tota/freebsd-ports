@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-cran-Rcpp>=0.10.5:${PORTSDIR}/devel/R-cran-Rcpp \
 		R-cran-nloptr>=1.0.4:${PORTSDIR}/math/R-cran-nloptr \
 		R-cran-RcppEigen>0:${PORTSDIR}/math/R-cran-RcppEigen
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

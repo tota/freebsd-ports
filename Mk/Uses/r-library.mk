@@ -1,19 +1,30 @@
 # $FreeBSD$
 #
-# Use the Comprehensive R Archive Network 
+# Use R libraries on the Comprehensive R Archive Network or
+# Bioconductor.org
 #
-# Feature:	cran
-# Usage:	USES=cran or USES=cran:ARGS
-# Valid ARGS:	auto-plist
+# Feature:	r-library
+# Usage:	USES=r-library or USES=r-library:ARGS
+# Valid ARGS:	cran (default, implicit), bioc,
+#		auto-plist (default, implicit)
 #
-# auto-plist	The pkg-plist can be automatically compiled
+# cran		Use the Comprehensive R Archive Network
+# bioc		Use Bioconductor
+# auto-plist	Generate packing list for R library port automatically
 #
 # MAINTAINER=	wen@FreeBSD.org
 
-.if !defined(_INCLUDE_USES_CRAN_MK)
-_INCLUDE_USES_CRAN_MK=	yes
+.if !defined(_INCLUDE_USES_R_LIBRARY_MK)
+_INCLUDE_USES_R_LIBRARY_MK=	yes
 
-MASTER_SITE_CRAN+=	http://cran.ms.unimelb.edu.au/src/contrib/ \
+.if empty(r-library_ARGS)
+r-library_ARGS=	cran auto-plist
+.endif
+
+.for _A in ${r-library_ARGS}
+_local:=	${_A}
+.if ${_local} == "cran"
+MASTER_SITE_CRAN=	http://cran.ms.unimelb.edu.au/src/contrib/ \
 			http://mirror.its.dal.ca/cran/src/contrib/ \
 			http://mirrors.dotsrc.org/cran/src/contrib/ \
 			http://cran.univ-lyon1.fr/src/contrib/ \
@@ -24,14 +35,21 @@ MASTER_SITE_CRAN+=	http://cran.ms.unimelb.edu.au/src/contrib/ \
 			http://cran.cnr.berkeley.edu/src/contrib/ \
 			http://cran.rakanu.com/src/contrib/ \
 			http://ftp.ctex.org/mirrors/CRAN/src/contrib/
-MASTER_SITE_CRAN_ARCHIVE+=	${MASTER_SITE_CRAN:S,$,Archive/${PORTNAME}/,}
-
+MASTER_SITE_CRAN_ARCHIVE=	${MASTER_SITE_CRAN:S,$,Archive/${PORTNAME}/,}
 MASTER_SITES?=	${MASTER_SITE_CRAN} ${MASTER_SITE_CRAN_ARCHIVE}
+PKGNAMEPREFIX?=	R-cran-
+.elif ${_local} == "bioc"
+MASTER_SITES?=	http://www.bioconductor.org/packages/release/bioc/src/contrib/
+PKGNAMEPREFIX?=	R-bioc-
+.elif ${_local} == "auto-plist"
+_R_AUTO_PLIST=	1
+.else
+IGNORE=	USES=r-library - invalid args: [${_local}] specified
+.endif
+.endfor
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/R:math/R
 RUN_DEPENDS+=	${LOCALBASE}/bin/R:math/R
-
-PKGNAMEPREFIX?=	R-cran-
 
 R_LIB_DIR=	lib/R/library
 R_MOD_DIR?=	${R_LIB_DIR}/${PORTNAME}
@@ -69,11 +87,11 @@ do-install:
 	${R_POSTCMD_INSTALL_OPTIONS} ${PORTNAME}
 .endif
 
-.if ${cran_ARGS:Mauto-plist}
-_USES_install+=	750:cran-auto-plist
-cran-auto-plist:
+.if defined(_R_AUTO_PLIST) && !empty(_R_AUTO_PLIST) && !exists(${.CURDIR}/pkg-plist)
+_USES_install+=	750:r-library-auto-plist
+r-library-auto-plist:
 	@${FIND} -ds ${STAGEDIR}${PREFIX}/${R_MOD_DIR} \( -type f -or -type l \) -print | \
 		${SED} -E -e 's,^${STAGEDIR}${PREFIX}/?,,' >> ${TMPPLIST}
 .endif
 
-.endif #_INCLUDE_USES_CRAN_MK
+.endif #_INCLUDE_USES_R_LIBRARY_MK

@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-cran-registry>0:${PORTSDIR}/devel/R-cran-registry \
 		R-cran-stringr>0:${PORTSDIR}/textproc/R-cran-stringr \
 		R-cran-xtable>0:${PORTSDIR}/textproc/R-cran-xtable
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

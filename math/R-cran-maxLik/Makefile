@@ -17,6 +17,6 @@ BUILD_DEPENDS=	R-cran-miscTools>=0.6.8:${PORTSDIR}/math/R-cran-miscTools \
 RUN_DEPENDS=	R-cran-miscTools>=0.6.8:${PORTSDIR}/math/R-cran-miscTools \
 		R-cran-sandwich>=0:${PORTSDIR}/math/R-cran-sandwich
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

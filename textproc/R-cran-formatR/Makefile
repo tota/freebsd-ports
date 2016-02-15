@@ -11,6 +11,6 @@ COMMENT=	Format R Code Automatically
 
 LICENSE=	GPLv2+
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

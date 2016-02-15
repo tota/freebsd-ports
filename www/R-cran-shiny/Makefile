@@ -20,6 +20,6 @@ RUN_DEPENDS=	R-cran-httpuv>=1.3.3:${PORTSDIR}/www/R-cran-httpuv \
 		R-cran-htmltools>=0.3:${PORTSDIR}/textproc/R-cran-htmltools \
 		R-cran-R6>=2.0:${PORTSDIR}/devel/R-cran-R6
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

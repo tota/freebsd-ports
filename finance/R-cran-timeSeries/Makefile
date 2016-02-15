@@ -17,6 +17,6 @@ TEST_DEPENDS=	R-cran-RUnit>=0:${PORTSDIR}/devel/R-cran-RUnit \
 		R-cran-xts>=0:${PORTSDIR}/math/R-cran-xts \
 		R-cran-PerformanceAnalytics>=0:${PORTSDIR}/finance/R-cran-PerformanceAnalytics
 
-USES=	cran
+USES=	r-library
 
 .include <bsd.port.mk>

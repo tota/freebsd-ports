@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-cran-sp>=1.0:${PORTSDIR}/math/R-cran-sp \
 		R-cran-deldir>0:${PORTSDIR}/math/R-cran-deldir \
 		R-cran-coda>0:${PORTSDIR}/math/R-cran-coda
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

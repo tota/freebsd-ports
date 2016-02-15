@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-cran-jsonlite>0:${PORTSDIR}/converters/R-cran-jsonlite \
 		R-cran-openssl>=0.8:${PORTSDIR}/security/R-cran-openssl \
 		R-cran-R6>0:${PORTSDIR}/devel/R-cran-R6
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>

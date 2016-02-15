@@ -11,7 +11,7 @@ COMMENT=	Tools for parsing and generating XML
 
 LICENSE=	BSD2CLAUSE
 
-USES=	cran:auto-plist
+USES=	r-library
 USE_GNOME=	libxml2
 
 .include <bsd.port.mk>

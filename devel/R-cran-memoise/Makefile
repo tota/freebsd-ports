@@ -13,6 +13,6 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	R-cran-digest>=0.6.3:${PORTSDIR}/security/R-cran-digest
 
-USES=	cran:auto-plist
+USES=	r-library
 
 .include <bsd.port.mk>
