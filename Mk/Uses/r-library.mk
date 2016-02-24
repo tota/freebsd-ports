@@ -21,8 +21,12 @@ _INCLUDE_USES_R_LIBRARY_MK=	yes
 r-library_ARGS=	cran auto-plist
 .endif
 
+.if ${r-library_ARGS:Mcran} && ${r-library_ARGS:Mbioc}
+IGNORE= cran and bioc arguments are mutually exclusive for USES=r-library
+.endif
+
 .for _A in ${r-library_ARGS}
-_local:=	${_A}
+_local:=       ${_A}
 .if ${_local} == "cran"
 MASTER_SITE_CRAN=	http://cran.ms.unimelb.edu.au/src/contrib/ \
 			http://mirror.its.dal.ca/cran/src/contrib/ \
@@ -42,7 +46,7 @@ PKGNAMEPREFIX?=	R-cran-
 MASTER_SITES?=	http://www.bioconductor.org/packages/release/bioc/src/contrib/
 PKGNAMEPREFIX?=	R-bioc-
 .elif ${_local} == "auto-plist"
-_R_AUTO_PLIST=	1
+_R_LIBRARY_AUTO_PLIST=	1
 .else
 IGNORE=	USES=r-library - invalid args: [${_local}] specified
 .endif
@@ -87,7 +91,7 @@ do-install:
 	${R_POSTCMD_INSTALL_OPTIONS} ${PORTNAME}
 .endif
 
-.if defined(_R_AUTO_PLIST) && !empty(_R_AUTO_PLIST) && !exists(${.CURDIR}/pkg-plist)
+.if defined(_R_LIBRARY_AUTO_PLIST) && !empty(_R_LIBRARY_AUTO_PLIST) && !exists(${.CURDIR}/pkg-plist)
 _USES_install+=	750:r-library-auto-plist
 r-library-auto-plist:
 	@${FIND} -ds ${STAGEDIR}${PREFIX}/${R_MOD_DIR} \( -type f -or -type l \) -print | \
