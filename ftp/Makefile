@@ -3,8 +3,8 @@
 
     COMMENT = FTP client and server utilities
 
-    SUBDIR += R-cran-RCurl
-    SUBDIR += R-cran-curl
+    SUBDIR += R-RCurl
+    SUBDIR += R-curl
     SUBDIR += atftp
     SUBDIR += axel
     SUBDIR += bareftp

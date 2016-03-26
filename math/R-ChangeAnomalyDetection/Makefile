@@ -1,0 +1,20 @@
+# Created by: TAKATSU Tomonari <tota@FreeBSD.org>
+# $FreeBSD$
+
+PORTNAME=	ChangeAnomalyDetection
+PORTVERSION=	0.1.0
+PORTREVISION=	5
+CATEGORIES=	math
+DISTNAME=	${PORTNAME}_${PORTVERSION}
+
+MAINTAINER=	tota@FreeBSD.org
+COMMENT=	Change Anomaly Detection
+
+LICENSE=	BSD
+
+RUN_DEPENDS=	R-TTR>0:${PORTSDIR}/finance/R-TTR \
+		R-forecast>0:${PORTSDIR}/math/R-forecast
+
+USES=	r-packages
+
+.include <bsd.port.mk>

@@ -1,0 +1,20 @@
+# Created by: Wen Heping <wen@FreeBSD.org>
+# $FreeBSD$
+
+PORTNAME=	lmtest
+DISTVERSION=	0.9-34
+CATEGORIES=	finance
+DISTNAME=	${PORTNAME}_${DISTVERSION}
+
+MAINTAINER=	wen@FreeBSD.org
+COMMENT=	Testing Linear Regression Models
+
+LICENSE=	GPLv2
+
+RUN_DEPENDS=	R-zoo>=0:${PORTSDIR}/math/R-zoo \
+		R-strucchange>0:${PORTSDIR}/finance/R-strucchange \
+		R-sandwich>=2.2.4:${PORTSDIR}/math/R-sandwich
+
+USES=	r-packages
+
+.include <bsd.port.mk>

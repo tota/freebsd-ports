@@ -7,7 +7,7 @@
     SUBDIR += 44bsd-rdist
     SUBDIR += 6tunnel
     SUBDIR += GeoIP
-    SUBDIR += R-cran-twitteR
+    SUBDIR += R-twitteR
     SUBDIR += Sockets
     SUBDIR += abills
     SUBDIR += activemq

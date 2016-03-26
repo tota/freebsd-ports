@@ -84,7 +84,7 @@ post-install:
 .endif
 
 .if defined(MAINTAINER_MODE)
-BUILD_DEPENDS+=	${LOCALBASE}/lib/R/library/coda/R/coda.rdb:${PORTSDIR}/math/R-cran-coda
+BUILD_DEPENDS+=	${LOCALBASE}/lib/R/library/coda/R/coda.rdb:${PORTSDIR}/math/R-coda
 
 check test: install
 .for i in 1 2

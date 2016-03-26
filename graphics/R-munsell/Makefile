@@ -1,0 +1,22 @@
+# Created by: TAKATSU Tomonari <tota@FreeBSD.org>
+# $FreeBSD$
+
+PORTNAME=	munsell
+PORTVERSION=	0.4.3
+CATEGORIES=	graphics
+DISTNAME=	${PORTNAME}_${PORTVERSION}
+
+MAINTAINER=	tota@FreeBSD.org
+COMMENT=	Munsell colour system
+
+LICENSE=	MIT CW
+LICENSE_COMB=	multi
+LICENSE_NAME_CW=	Charlotte Wickham COPYRIGHT
+LICENSE_FILE_CW=	${WRKSRC}/LICENSE
+LICENSE_PERMS_CW=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+RUN_DEPENDS=	R-colorspace>0:${PORTSDIR}/graphics/R-colorspace
+
+USES=	r-packages
+
+.include <bsd.port.mk>

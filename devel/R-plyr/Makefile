@@ -1,0 +1,25 @@
+# Created by: TAKATSU Tomonari <tota@FreeBSD.org>
+# $FreeBSD$
+
+PORTNAME=	plyr
+PORTVERSION=	1.8.3
+CATEGORIES=	devel
+DISTNAME=	${PORTNAME}_${DISTVERSION}
+
+MAINTAINER=	tota@FreeBSD.org
+COMMENT=	Tools for splitting, applying, and combining data
+
+LICENSE=	MIT HW
+LICENSE_COMB=	multi
+LICENSE_NAME_HW=	Hadley Wickham COPYRIGHT
+LICENSE_FILE_HW=	${WRKSRC}/LICENSE
+LICENSE_PERMS_HW=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+RUN_DEPENDS=	R-Rcpp>=0.11.0:${PORTSDIR}/devel/R-Rcpp
+
+USES=	r-packages
+
+post-stage:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/R/library/plyr/libs/plyr.so
+
+.include <bsd.port.mk>

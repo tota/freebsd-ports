@@ -1,0 +1,20 @@
+# Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
+# $FreeBSD$
+
+PORTNAME=	sspir
+PORTVERSION=	0.2.10
+PORTREVISION=	4
+CATEGORIES=	math
+MASTER_SITES=	http://cran.r-project.org/src/contrib/Archive/sspir/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
+
+MAINTAINER=	skreuzer@FreeBSD.org
+COMMENT=	glm-like formula to define dynamic generalized linear models
+
+RUN_DEPENDS=	R-mvtnorm>=0.9.96_11:${PORTSDIR}/math/R-mvtnorm \
+		R-KFAS>=0.9.11_3:${PORTSDIR}/math/R-KFAS
+
+USES=	r-packages
+
+
+.include <bsd.port.mk>

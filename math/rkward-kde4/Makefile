@@ -45,12 +45,12 @@ PLIST_SUB+=	NLS=${NLS}
 
 .if ${PORT_OPTIONS:MRECDEP}
 LR_MOD_DIR=	${LOCALBASE}/lib/R/library
-RUN_DEPENDS+=	${LR_MOD_DIR}/R2HTML/INDEX:${PORTSDIR}/textproc/R-cran-R2HTML	\
-		${LR_MOD_DIR}/XML/INDEX:${PORTSDIR}/textproc/R-cran-XML		\
-		${LR_MOD_DIR}/mvtnorm/INDEX:${PORTSDIR}/math/R-cran-mvtnorm	\
-		${LR_MOD_DIR}/outliers/INDEX:${PORTSDIR}/math/R-cran-outliers	\
-		${LR_MOD_DIR}/tseries/INDEX:${PORTSDIR}/finance/R-cran-tseries	\
-		${LR_MOD_DIR}/car/INDEX:${PORTSDIR}/math/R-cran-car
+RUN_DEPENDS+=	${LR_MOD_DIR}/R2HTML/INDEX:${PORTSDIR}/textproc/R-R2HTML	\
+		${LR_MOD_DIR}/XML/INDEX:${PORTSDIR}/textproc/R-XML		\
+		${LR_MOD_DIR}/mvtnorm/INDEX:${PORTSDIR}/math/R-mvtnorm	\
+		${LR_MOD_DIR}/outliers/INDEX:${PORTSDIR}/math/R-outliers	\
+		${LR_MOD_DIR}/tseries/INDEX:${PORTSDIR}/finance/R-tseries	\
+		${LR_MOD_DIR}/car/INDEX:${PORTSDIR}/math/R-car
 .endif
 
 pre-configure:

@@ -1,0 +1,18 @@
+# Created by: TAKATSU Tomonari <tota@FreeBSD.org>
+# $FreeBSD$
+
+PORTNAME=	pbkrtest
+DISTVERSION=	0.4-5
+CATEGORIES=	math
+DISTNAME=	${PORTNAME}_${DISTVERSION}
+
+MAINTAINER=	tota@FreeBSD.org
+COMMENT=	Parametric bootstrap and Kenward-Roger-based methods for mixed model comparison
+
+LICENSE=	GPLv2+
+
+RUN_DEPENDS=	R-lme4>=1.1.10:${PORTSDIR}/math/R-lme4
+
+USES=	r-packages
+
+.include <bsd.port.mk>

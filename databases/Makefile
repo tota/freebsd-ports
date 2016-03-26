@@ -3,11 +3,11 @@
 
     COMMENT = Databases and related software
 
-    SUBDIR += R-cran-DBI
-    SUBDIR += R-cran-RMySQL
-    SUBDIR += R-cran-RSQLite
-    SUBDIR += R-cran-RSQLite.extfuns
-    SUBDIR += R-cran-sqldf
+    SUBDIR += R-DBI
+    SUBDIR += R-RMySQL
+    SUBDIR += R-RSQLite
+    SUBDIR += R-RSQLite.extfuns
+    SUBDIR += R-sqldf
     SUBDIR += WWWdb
     SUBDIR += adminer
     SUBDIR += adodb

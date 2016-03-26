@@ -3,9 +3,9 @@
 
     COMMENT = Character code converters
 
-    SUBDIR += R-cran-RJSONIO
-    SUBDIR += R-cran-jsonlite
-    SUBDIR += R-cran-rjson
+    SUBDIR += R-RJSONIO
+    SUBDIR += R-jsonlite
+    SUBDIR += R-rjson
     SUBDIR += aish
     SUBDIR += ascii2binary
     SUBDIR += asr10

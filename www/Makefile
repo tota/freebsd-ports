@@ -3,14 +3,14 @@
 
     COMMENT = Ports related to the World Wide Web
 
-    SUBDIR += R-cran-RgoogleMaps
-    SUBDIR += R-cran-htmlwidgets
-    SUBDIR += R-cran-httpuv
-    SUBDIR += R-cran-httr
-    SUBDIR += R-cran-rvest
-    SUBDIR += R-cran-scrapeR
-    SUBDIR += R-cran-selectr
-    SUBDIR += R-cran-shiny
+    SUBDIR += R-RgoogleMaps
+    SUBDIR += R-htmlwidgets
+    SUBDIR += R-httpuv
+    SUBDIR += R-httr
+    SUBDIR += R-rvest
+    SUBDIR += R-scrapeR
+    SUBDIR += R-selectr
+    SUBDIR += R-shiny
     SUBDIR += WebMagick
     SUBDIR += ach
     SUBDIR += adzap

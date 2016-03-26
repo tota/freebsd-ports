@@ -5,9 +5,9 @@
 
     SUBDIR += ADMsmb
     SUBDIR += ADMsnmp
-    SUBDIR += R-cran-ROAuth
-    SUBDIR += R-cran-digest
-    SUBDIR += R-cran-openssl
+    SUBDIR += R-ROAuth
+    SUBDIR += R-digest
+    SUBDIR += R-openssl
     SUBDIR += aescrypt
     SUBDIR += aespipe
     SUBDIR += afl
