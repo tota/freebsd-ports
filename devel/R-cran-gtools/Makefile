@@ -11,6 +11,6 @@ COMMENT=	Various R programming tools
 
 LICENSE=	GPLv2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${PORTVERSION:C/\./-/g:C/-/./1}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	R Package for Ecological Inference in 2x2 Tables
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

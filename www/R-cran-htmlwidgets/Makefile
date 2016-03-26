@@ -15,6 +15,6 @@ RUN_DEPENDS=	R-cran-htmltools>=0.3:${PORTSDIR}/textproc/R-cran-htmltools \
 		R-cran-jsonlite>=0.9.16:${PORTSDIR}/converters/R-cran-jsonlite \
 		R-cran-yaml>0:${PORTSDIR}/textproc/R-cran-yaml
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

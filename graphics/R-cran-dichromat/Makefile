@@ -12,6 +12,6 @@ COMMENT=	Color schemes for dichromats
 
 LICENSE=	GPLv2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

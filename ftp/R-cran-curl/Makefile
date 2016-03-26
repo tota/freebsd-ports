@@ -14,7 +14,7 @@ LICENSE=	MIT
 BUILD_DEPENDS=	${LOCALBASE}/include/curl/curl.h:${PORTSDIR}/ftp/curl
 LIB_DEPENDS=	libcurl.so:${PORTSDIR}/ftp/curl
 
-USES=	r-library
+USES=	r-packages
 
 post-patch:
 	@${REINPLACE_CMD} -e '/bin\//s|bash|sh|' ${WRKSRC}/configure

@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Collection of some tests commonly used for identifying outliers
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-cran-dplyr>=0.4:${PORTSDIR}/math/R-cran-dplyr \
 		R-cran-magrittr>0:${PORTSDIR}/devel/R-cran-magrittr \
 		R-cran-Rcpp>0:${PORTSDIR}/devel/R-cran-Rcpp
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

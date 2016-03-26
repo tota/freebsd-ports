@@ -12,6 +12,6 @@ COMMENT=	Inline C, C++, Fortran function calls from R
 LICENSE=	LGPL20 LGPL21 LGPL3
 LICENSE_COMB=	multi
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

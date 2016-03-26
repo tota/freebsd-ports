@@ -12,6 +12,6 @@ COMMENT=	Prototype object-based programming
 
 LICENSE=	GPLv2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

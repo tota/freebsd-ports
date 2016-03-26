@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-cran-xml2>0:${PORTSDIR}/textproc/R-cran-xml2 \
 		R-cran-selectr>0:${PORTSDIR}/www/R-cran-selectr \
 		R-cran-magrittr>0:${PORTSDIR}/devel/R-cran-magrittr
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -18,7 +18,7 @@ COMMENT=	Supplementary distributions and RNG for R
 LICENSE=		GPLv2
 
 BENCHMARK_SCRIPT=	R-benchmark-25.R
-USES=	r-library
+USES=	r-packages
 WRKSRC=			${WRKDIR}/${PORTNAME}
 
 .if defined(MAINTAINER_MODE)

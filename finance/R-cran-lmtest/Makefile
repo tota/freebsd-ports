@@ -15,6 +15,6 @@ RUN_DEPENDS=	R-cran-zoo>=0:${PORTSDIR}/math/R-cran-zoo \
 		R-cran-strucchange>0:${PORTSDIR}/finance/R-cran-strucchange \
 		R-cran-sandwich>=2.2.4:${PORTSDIR}/math/R-cran-sandwich
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

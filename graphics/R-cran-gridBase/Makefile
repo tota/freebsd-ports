@@ -12,6 +12,6 @@ COMMENT=	Integration of base and grid graphics
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

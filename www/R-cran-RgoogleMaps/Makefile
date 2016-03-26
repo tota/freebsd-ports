@@ -15,6 +15,6 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	R-cran-png>0:${PORTSDIR}/graphics/R-cran-png \
 		R-cran-RJSONIO>0:${PORTSDIR}/converters/R-cran-RJSONIO
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

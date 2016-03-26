@@ -14,6 +14,6 @@ LICENSE=	GPLv2+
 RUN_DEPENDS=	R-cran-SparseM>0:${PORTSDIR}/math/R-cran-SparseM \
 		R-cran-MatrixModels>0:${PORTSDIR}/math/R-cran-MatrixModels
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

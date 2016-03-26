@@ -19,6 +19,6 @@ RUN_DEPENDS=	R-cran-evaluate>=0.8:${PORTSDIR}/devel/R-cran-evaluate \
 		R-cran-stringr>=0.6:${PORTSDIR}/textproc/R-cran-stringr \
 		R-cran-yaml>=2.1.5:${PORTSDIR}/textproc/R-cran-yaml
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

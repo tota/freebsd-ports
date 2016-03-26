@@ -11,6 +11,6 @@ COMMENT=	S3 Infrastructure for Regular and Irregular Time Series
 
 LICENSE=	GPLv2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

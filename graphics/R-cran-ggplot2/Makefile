@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-cran-digest>=0:${PORTSDIR}/security/R-cran-digest \
 		R-cran-reshape2>=0:${PORTSDIR}/devel/R-cran-reshape2 \
 		R-cran-scales>=0.3.0:${PORTSDIR}/graphics/R-cran-scales
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

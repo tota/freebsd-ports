@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${DISTVERSION}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Smoothing methods for nonparametric regression and density estimation
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

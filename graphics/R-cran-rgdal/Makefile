@@ -15,6 +15,6 @@ LIB_DEPENDS=	libgdal.so:${PORTSDIR}/graphics/gdal \
 		libproj.so:${PORTSDIR}/graphics/proj
 RUN_DEPENDS=	R-cran-sp>=1.1.0:${PORTSDIR}/math/R-cran-sp
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

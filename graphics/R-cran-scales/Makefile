@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-cran-RColorBrewer>0:${PORTSDIR}/graphics/R-cran-RColorBrewer \
 		R-cran-labeling>0:${PORTSDIR}/math/R-cran-labeling \
 		R-cran-Rcpp>0:${PORTSDIR}/devel/R-cran-Rcpp
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

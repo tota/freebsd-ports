@@ -17,6 +17,6 @@ BUILD_DEPENDS=	R-cran-quadprog>0:${PORTSDIR}/math/R-cran-quadprog \
 RUN_DEPENDS=	R-cran-quadprog>0:${PORTSDIR}/math/R-cran-quadprog \
 		R-cran-zoo>0:${PORTSDIR}/math/R-cran-zoo
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

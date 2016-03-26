@@ -13,6 +13,6 @@ COMMENT=	Hidden Markov Models simulations and estimations
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

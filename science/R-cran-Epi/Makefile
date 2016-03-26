@@ -15,6 +15,6 @@ RUN_DEPENDS=	R-cran-cmprsk>0:${PORTSDIR}/science/R-cran-cmprsk \
 		R-cran-etm>0:${PORTSDIR}/science/R-cran-etm \
 		R-cran-plyr>0:${PORTSDIR}/devel/R-cran-plyr
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -15,6 +15,6 @@ LICENSE=	APACHE20
 BUILD_DEPENDS=	R-cran-RSQLite>=0.11.1:${PORTSDIR}/databases/R-cran-RSQLite
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

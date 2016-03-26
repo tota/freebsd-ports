@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${PORTVERSION:C/\./-/g:C/-/./1}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Multivariate Normal and t Distributions
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -18,6 +18,6 @@ RUN_DEPENDS=	R-cran-strucchange>0:${PORTSDIR}/finance/R-cran-strucchange \
 		R-cran-lmtest>=0.9.26:${PORTSDIR}/finance/R-cran-lmtest \
 		R-cran-sandwich>=2.2.4:${PORTSDIR}/math/R-cran-sandwich
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

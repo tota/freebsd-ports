@@ -25,6 +25,6 @@ RUN_DEPENDS=	R-cran-pkgmaker>=0.20:${PORTSDIR}/devel/R-cran-pkgmaker \
 		R-cran-ggplot2>0:${PORTSDIR}/graphics/R-cran-ggplot2 \
 		R-cran-reshape2>0:${PORTSDIR}/devel/R-cran-reshape2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

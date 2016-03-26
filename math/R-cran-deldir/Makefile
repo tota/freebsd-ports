@@ -11,6 +11,6 @@ COMMENT=	Delaunay Triangulation and Dirichlet (Voronoi) Tessellation
 
 LICENSE=	GPLv2+
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

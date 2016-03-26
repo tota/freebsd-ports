@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Epidemiological calculator
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

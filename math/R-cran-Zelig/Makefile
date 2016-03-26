@@ -39,6 +39,6 @@ RUN_DEPENDS=	R-cran-AER>=0:${PORTSDIR}/finance/R-cran-AER \
 		R-cran-geepack>=0:${PORTSDIR}/math/R-cran-geepack \
 		R-cran-survey>=0:${PORTSDIR}/math/R-cran-survey
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

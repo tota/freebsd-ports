@@ -14,7 +14,7 @@ LICENSE=	GPLv3
 LIB_DEPENDS=	libtiff.so:${PORTSDIR}/graphics/tiff
 RUN_DEPENDS=	R-cran-pixmap>0:${PORTSDIR}/graphics/R-cran-pixmap
 
-USES=	r-library
+USES=	r-packages
 
 LDFLAGS+=	-L${LOCALBASE}/lib
 

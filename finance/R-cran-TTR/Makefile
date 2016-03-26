@@ -13,6 +13,6 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-cran-xts>=0.9.3:${PORTSDIR}/math/R-cran-xts
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

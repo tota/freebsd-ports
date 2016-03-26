@@ -12,6 +12,6 @@ COMMENT=	Vector Generalized Linear and Additive Models
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -11,6 +11,6 @@ COMMENT=	Lasso and elastic-net regularized generalized linear models
 
 LICENSE=	GPLv2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

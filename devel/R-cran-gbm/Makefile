@@ -11,6 +11,6 @@ COMMENT=	Extensions to AdaBoost algorithm
 
 LICENSE=	GPLv2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

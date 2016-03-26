@@ -12,6 +12,6 @@ COMMENT=	R package for creating objects which can handle dates and times
 
 LICENSE=	GPLv2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

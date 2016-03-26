@@ -11,6 +11,6 @@ COMMENT=	Robust, High Performance JSON Parser and Generator for R
 
 LICENSE=	MIT
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

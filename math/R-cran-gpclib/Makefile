@@ -10,6 +10,6 @@ DISTNAME=	${PORTNAME}_${DISTVERSION}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	General Polygon Clipping Library for R
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

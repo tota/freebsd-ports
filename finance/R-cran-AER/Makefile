@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-cran-car>=2.0.1:${PORTSDIR}/math/R-cran-car \
 		R-cran-Formula>=0.2.0:${PORTSDIR}/math/R-cran-Formula \
 		R-cran-zoo>=0:${PORTSDIR}/math/R-cran-zoo
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

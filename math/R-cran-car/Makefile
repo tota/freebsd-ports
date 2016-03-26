@@ -15,6 +15,6 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	R-cran-pbkrtest>=0.3.2:${PORTSDIR}/math/R-cran-pbkrtest \
 		R-cran-quantreg>0:${PORTSDIR}/math/R-cran-quantreg
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

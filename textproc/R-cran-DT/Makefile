@@ -15,6 +15,6 @@ RUN_DEPENDS=	R-cran-htmltools>0:${PORTSDIR}/textproc/R-cran-htmltools \
 		R-cran-htmlwidgets>=0.4:${PORTSDIR}/www/R-cran-htmlwidgets \
 		R-cran-magrittr>0:${PORTSDIR}/devel/R-cran-magrittr
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

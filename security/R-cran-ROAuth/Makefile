@@ -14,6 +14,6 @@ LICENSE=	ART20
 RUN_DEPENDS=	R-cran-RCurl>0:${PORTSDIR}/ftp/R-cran-RCurl \
 		R-cran-digest>0:${PORTSDIR}/security/R-cran-digest
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

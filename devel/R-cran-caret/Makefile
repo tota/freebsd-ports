@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-cran-ggplot2>0:${PORTSDIR}/graphics/R-cran-ggplot2 \
 		R-cran-plyr>0:${PORTSDIR}/devel/R-cran-plyr \
 		R-cran-reshape2>0:${PORTSDIR}/devel/R-cran-reshape2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

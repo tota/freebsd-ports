@@ -11,6 +11,6 @@ COMMENT=	Safely Access the RStudio API
 
 LICENSE=	MIT
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

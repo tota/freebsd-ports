@@ -14,6 +14,6 @@ LICENSE_COMB=	dual
 
 RUN_DEPENDS=	R-cran-spdep>0:${PORTSDIR}/math/R-cran-spdep
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

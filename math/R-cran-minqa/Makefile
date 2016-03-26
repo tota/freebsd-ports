@@ -13,6 +13,6 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-cran-Rcpp>=0.9.10:${PORTSDIR}/devel/R-cran-Rcpp
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -13,6 +13,6 @@ COMMENT=	Generalized Dynamic Linear Modeler
 LICENSE=	GPLv2 GPLv3 BSD2CLAUSE
 LICENSE_COMB=	dual
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

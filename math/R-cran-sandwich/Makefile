@@ -14,6 +14,6 @@ LICENSE_COMB=	dual
 
 RUN_DEPENDS=	R-cran-zoo>0:${PORTSDIR}/math/R-cran-zoo
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

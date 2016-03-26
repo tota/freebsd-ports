@@ -11,6 +11,6 @@ COMMENT=	Serialize R objects to JSON, JavaScript Object Notation
 
 LICENSE=	BSD3CLAUSE
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

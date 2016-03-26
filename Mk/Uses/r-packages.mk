@@ -3,8 +3,8 @@
 # Use R libraries on the Comprehensive R Archive Network or
 # Bioconductor.org
 #
-# Feature:	r-library
-# Usage:	USES=r-library or USES=r-library:ARGS
+# Feature:	r-packages
+# Usage:	USES=r-packages or USES=r-packages:ARGS
 # Valid ARGS:	cran (default, implicit), bioc,
 #		auto-plist (default, implicit)
 #
@@ -14,18 +14,18 @@
 #
 # MAINTAINER=	wen@FreeBSD.org
 
-.if !defined(_INCLUDE_USES_R_LIBRARY_MK)
-_INCLUDE_USES_R_LIBRARY_MK=	yes
+.if !defined(_INCLUDE_USES_R_PACKAGES_MK)
+_INCLUDE_USES_R_PACKAGES_MK=	yes
 
-.if empty(r-library_ARGS)
-r-library_ARGS=	cran auto-plist
+.if empty(r-packages_ARGS)
+r-packages_ARGS=	cran auto-plist
 .endif
 
-.if ${r-library_ARGS:Mcran} && ${r-library_ARGS:Mbioc}
-IGNORE= cran and bioc arguments are mutually exclusive for USES=r-library
+.if ${r-packages_ARGS:Mcran} && ${r-packages_ARGS:Mbioc}
+IGNORE= cran and bioc arguments are mutually exclusive for USES=r-packages
 .endif
 
-.for _A in ${r-library_ARGS}
+.for _A in ${r-packages_ARGS}
 _local:=       ${_A}
 .if ${_local} == "cran"
 MASTER_SITE_CRAN=	http://cran.ms.unimelb.edu.au/src/contrib/ \
@@ -41,16 +41,16 @@ MASTER_SITE_CRAN=	http://cran.ms.unimelb.edu.au/src/contrib/ \
 			http://ftp.ctex.org/mirrors/CRAN/src/contrib/
 MASTER_SITE_CRAN_ARCHIVE=	${MASTER_SITE_CRAN:S,$,Archive/${PORTNAME}/,}
 MASTER_SITES?=	${MASTER_SITE_CRAN} ${MASTER_SITE_CRAN_ARCHIVE}
-PKGNAMEPREFIX?=	R-cran-
 .elif ${_local} == "bioc"
 MASTER_SITES?=	http://www.bioconductor.org/packages/release/bioc/src/contrib/
-PKGNAMEPREFIX?=	R-bioc-
 .elif ${_local} == "auto-plist"
-_R_LIBRARY_AUTO_PLIST=	1
+_R_PACKAGES_AUTO_PLIST=	1
 .else
-IGNORE=	USES=r-library - invalid args: [${_local}] specified
+IGNORE=	USES=r-packages - invalid args: [${_local}] specified
 .endif
 .endfor
+
+PKGNAMEPREFIX?=	R-
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/R:math/R
 RUN_DEPENDS+=	${LOCALBASE}/bin/R:math/R
@@ -91,11 +91,11 @@ do-install:
 	${R_POSTCMD_INSTALL_OPTIONS} ${PORTNAME}
 .endif
 
-.if defined(_R_LIBRARY_AUTO_PLIST) && !empty(_R_LIBRARY_AUTO_PLIST) && !exists(${.CURDIR}/pkg-plist)
-_USES_install+=	750:r-library-auto-plist
-r-library-auto-plist:
+.if defined(_R_PACKAGES_AUTO_PLIST) && !empty(_R_PACKAGES_AUTO_PLIST) && !exists(${.CURDIR}/pkg-plist)
+_USES_install+=	750:r-packages-auto-plist
+r-packages-auto-plist:
 	@${FIND} -ds ${STAGEDIR}${PREFIX}/${R_MOD_DIR} \( -type f -or -type l \) -print | \
 		${SED} -E -e 's,^${STAGEDIR}${PREFIX}/?,,' >> ${TMPPLIST}
 .endif
 
-.endif #_INCLUDE_USES_R_LIBRARY_MK
+.endif #_INCLUDE_USES_R_PACKAGES_MK

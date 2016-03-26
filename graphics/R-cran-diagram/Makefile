@@ -14,6 +14,6 @@ LICENSE_COMB=	dual
 
 RUN_DEPENDS=	R-cran-shape>0:${PORTSDIR}/graphics/R-cran-shape
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

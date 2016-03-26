@@ -14,6 +14,6 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-cran-iterators>=1.0.0:${PORTSDIR}/devel/R-cran-iterators
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

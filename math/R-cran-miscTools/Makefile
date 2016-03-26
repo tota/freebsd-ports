@@ -12,6 +12,6 @@ COMMENT=	Miscellaneous small tools and utilities for R
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=		r-library
+USES=		r-packages
 
 .include <bsd.port.mk>

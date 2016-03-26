@@ -13,6 +13,6 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-cran-mime>=0.3:${PORTSDIR}/misc/R-cran-mime
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

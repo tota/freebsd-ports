@@ -14,6 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	R-cran-Rcpp>=0.11.0:${PORTSDIR}/devel/R-cran-Rcpp
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

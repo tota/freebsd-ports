@@ -10,6 +10,6 @@ COMMENT=	Arrange grobs in tables
 
 LICENSE=	GPLv2
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

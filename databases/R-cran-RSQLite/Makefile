@@ -14,6 +14,6 @@ LICENSE=	LGPL20
 BUILD_DEPENDS=	R-cran-DBI>=0.2.5:${PORTSDIR}/databases/R-cran-DBI
 RUN_DEPENDS=	R-cran-DBI>=0.2.5:${PORTSDIR}/databases/R-cran-DBI
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -18,6 +18,6 @@ RUN_DEPENDS=	R-cran-Formula>=0.2.0:${PORTSDIR}/math/R-cran-Formula \
 		R-cran-car>0:${PORTSDIR}/math/R-cran-car \
 		R-cran-lmtest>0:${PORTSDIR}/finance/R-cran-lmtest
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

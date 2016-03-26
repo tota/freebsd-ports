@@ -11,6 +11,6 @@ COMMENT=	ColorBrewer palettes
 
 LICENSE=	APACHE20
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

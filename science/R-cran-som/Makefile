@@ -12,6 +12,6 @@ COMMENT=	Self-Organizing Map
 
 LICENSE=	GPLv3
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

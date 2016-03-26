@@ -14,6 +14,6 @@ LICENSE_COMB=	dual
 
 RUN_DEPENDS=	R-cran-sandwich>0:${PORTSDIR}/math/R-cran-sandwich
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

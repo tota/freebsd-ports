@@ -11,6 +11,6 @@ COMMENT=	Disciplined approach to non-standard evaluation
 
 LICENSE=	GPLv3
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

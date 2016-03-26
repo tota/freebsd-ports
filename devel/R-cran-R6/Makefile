@@ -11,6 +11,6 @@ COMMENT=	Classes with reference semantics
 
 LICENSE=	MIT
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -13,6 +13,6 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	R-cran-bitops>0:${PORTSDIR}/devel/R-cran-bitops
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

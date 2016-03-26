@@ -13,6 +13,6 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	R-cran-pkgmaker>=0.20:${PORTSDIR}/devel/R-cran-pkgmaker
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

@@ -12,6 +12,6 @@ COMMENT=	Syntax Highlighting for R Source Code
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>

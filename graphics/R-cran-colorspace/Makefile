@@ -11,6 +11,6 @@ COMMENT=	Color Space Manipulation
 
 LICENSE=	BSD3CLAUSE
 
-USES=	r-library
+USES=	r-packages
 
 .include <bsd.port.mk>
