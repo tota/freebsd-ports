@@ -15,6 +15,6 @@ RUN_DEPENDS=	R-cmprsk>0:${PORTSDIR}/science/R-cmprsk \
 		R-etm>0:${PORTSDIR}/science/R-etm \
 		R-plyr>0:${PORTSDIR}/devel/R-plyr
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

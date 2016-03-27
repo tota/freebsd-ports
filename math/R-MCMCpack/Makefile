@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-coda>0.11.3:${PORTSDIR}/math/R-coda
 
 # Actually required 4.0 or later.
 USE_GCC=	any
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

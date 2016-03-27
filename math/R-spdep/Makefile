@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-sp>=1.0:${PORTSDIR}/math/R-sp \
 		R-deldir>0:${PORTSDIR}/math/R-deldir \
 		R-coda>0:${PORTSDIR}/math/R-coda
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

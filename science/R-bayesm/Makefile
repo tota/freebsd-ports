@@ -13,6 +13,6 @@ COMMENT=	Bayesian Inference for Marketing/Micro-econometrics
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=		r-packages
+USES=		r-packages:auto-plist
 
 .include <bsd.port.mk>

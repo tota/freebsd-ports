@@ -13,6 +13,6 @@ LICENSE=	GPLv2+
 
 RUN_DEPENDS=	R-lme4>=1.1.10:${PORTSDIR}/math/R-lme4
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

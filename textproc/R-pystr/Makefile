@@ -9,6 +9,6 @@ DISTNAME=	${PORTNAME}_${DISTVERSION}
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	String operations the Python way
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

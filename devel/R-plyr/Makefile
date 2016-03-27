@@ -17,7 +17,7 @@ LICENSE_PERMS_HW=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 RUN_DEPENDS=	R-Rcpp>=0.11.0:${PORTSDIR}/devel/R-Rcpp
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 post-stage:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/R/library/plyr/libs/plyr.so

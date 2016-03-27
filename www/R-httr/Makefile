@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-jsonlite>0:${PORTSDIR}/converters/R-jsonlite \
 		R-openssl>=0.8:${PORTSDIR}/security/R-openssl \
 		R-R6>0:${PORTSDIR}/devel/R-R6
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

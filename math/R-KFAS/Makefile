@@ -11,6 +11,6 @@ COMMENT=	Kalman filter and smoothers for exponential family state space models
 
 LICENSE=	GPLv2+
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

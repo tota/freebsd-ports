@@ -13,6 +13,6 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	R-stringr>=0.6.2:${PORTSDIR}/textproc/R-stringr
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

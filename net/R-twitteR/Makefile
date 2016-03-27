@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-bit64>0:${PORTSDIR}/devel/R-bit64 \
 		R-DBI>=0.3.1:${PORTSDIR}/databases/R-DBI \
 		R-httr>=1.0.0:${PORTSDIR}/www/R-httr
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

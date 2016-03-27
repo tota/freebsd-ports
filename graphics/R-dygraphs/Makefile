@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-magrittr>0:${PORTSDIR}/devel/R-magrittr \
 		R-zoo>=1.7.10:${PORTSDIR}/math/R-zoo \
 		R-xts>=0.9.7:${PORTSDIR}/math/R-xts
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

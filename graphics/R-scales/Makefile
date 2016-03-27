@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-RColorBrewer>0:${PORTSDIR}/graphics/R-RColorBrewer \
 		R-labeling>0:${PORTSDIR}/math/R-labeling \
 		R-Rcpp>0:${PORTSDIR}/devel/R-Rcpp
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

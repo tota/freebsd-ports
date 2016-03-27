@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-xml2>0:${PORTSDIR}/textproc/R-xml2 \
 		R-selectr>0:${PORTSDIR}/www/R-selectr \
 		R-magrittr>0:${PORTSDIR}/devel/R-magrittr
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

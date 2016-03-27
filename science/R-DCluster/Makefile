@@ -14,6 +14,6 @@ LICENSE_COMB=	dual
 
 RUN_DEPENDS=	R-spdep>0:${PORTSDIR}/math/R-spdep
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

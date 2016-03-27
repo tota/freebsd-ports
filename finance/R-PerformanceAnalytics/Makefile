@@ -15,6 +15,6 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	R-zoo>0:${PORTSDIR}/math/R-zoo \
 		R-xts>=0.9:${PORTSDIR}/math/R-xts
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

@@ -17,6 +17,6 @@ BUILD_DEPENDS=	R-quadprog>0:${PORTSDIR}/math/R-quadprog \
 RUN_DEPENDS=	R-quadprog>0:${PORTSDIR}/math/R-quadprog \
 		R-zoo>0:${PORTSDIR}/math/R-zoo
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

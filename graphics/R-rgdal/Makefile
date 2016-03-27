@@ -15,6 +15,6 @@ LIB_DEPENDS=	libgdal.so:${PORTSDIR}/graphics/gdal \
 		libproj.so:${PORTSDIR}/graphics/proj
 RUN_DEPENDS=	R-sp>=1.1.0:${PORTSDIR}/math/R-sp
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

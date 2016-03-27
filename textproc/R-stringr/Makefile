@@ -14,6 +14,6 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	R-stringi>=0.4.1:${PORTSDIR}/textproc/R-stringi \
 		R-magrittr>0:${PORTSDIR}/devel/R-magrittr
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

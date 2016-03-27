@@ -14,6 +14,6 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-proto>=0.3.9.2_6:${PORTSDIR}/devel/R-proto
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

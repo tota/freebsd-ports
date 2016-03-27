@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-htmlwidgets>=0.5:${PORTSDIR}/www/R-htmlwidgets \
 		R-visNetwork>=0.1.2:${PORTSDIR}/graphics/R-visNetwork \
 		R-scales>=0.3.0:${PORTSDIR}/graphics/R-scales
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

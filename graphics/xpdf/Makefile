@@ -42,9 +42,9 @@ SUB_FILES=	xpdf-man.conf
 TYPE1_RUN_DEPENDS=	${LOCALBASE}/share/ghostscript/fonts/n021003l.pfb:${PORTSDIR}/print/gsfonts
 
 LIBPAPER_LIB_DEPENDS=	libpaper.so:${PORTSDIR}/print/libpaper
-LIBPAPER_CONFIGURE_ON=--with-libpaper-packages="${LOCALBASE}/lib" \
+LIBPAPER_CONFIGURE_ON=--with-libpaper-packages:auto-plist="${LOCALBASE}/lib" \
 		--with-libpaper-includes="${LOCALBASE}/include"
-LIBPAPER_CONFIGURE_OFF=--without-libpaper-packages
+LIBPAPER_CONFIGURE_OFF=--without-libpaper-packages:auto-plist
 
 .if defined(A4)
 CONFIGURE_ARGS+=	--enable-a4-paper

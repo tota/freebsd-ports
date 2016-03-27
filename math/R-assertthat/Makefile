@@ -11,6 +11,6 @@ COMMENT=	Easy pre and post assertions
 
 LICENSE=	GPLv3
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

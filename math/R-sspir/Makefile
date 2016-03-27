@@ -14,7 +14,7 @@ COMMENT=	glm-like formula to define dynamic generalized linear models
 RUN_DEPENDS=	R-mvtnorm>=0.9.96_11:${PORTSDIR}/math/R-mvtnorm \
 		R-KFAS>=0.9.11_3:${PORTSDIR}/math/R-KFAS
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 
 .include <bsd.port.mk>

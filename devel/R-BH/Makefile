@@ -11,6 +11,6 @@ COMMENT=	Boost C++ Header Files
 
 LICENSE=	BSL
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

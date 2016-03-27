@@ -11,6 +11,6 @@ COMMENT=	R functions implementing a Unit Testing framework
 
 LICENSE=	GPLv2
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

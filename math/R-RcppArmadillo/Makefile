@@ -13,7 +13,7 @@ LICENSE=	GPLv2+
 
 RUN_DEPENDS=	R-Rcpp>=0.11.0:${PORTSDIR}/devel/R-Rcpp
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 post-patch:
 	@${REINPLACE_CMD} -e '/bin\//s|bash|sh|' ${WRKSRC}/configure

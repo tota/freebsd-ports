@@ -15,6 +15,6 @@ LICENSE=	BSD3CLAUSE
 RUN_DEPENDS=	R-XML>0:${PORTSDIR}/textproc/R-XML \
 		R-xts>0:${PORTSDIR}/math/R-xts
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

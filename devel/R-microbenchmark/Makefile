@@ -13,6 +13,6 @@ LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	R-ggplot2>0:${PORTSDIR}/graphics/R-ggplot2
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

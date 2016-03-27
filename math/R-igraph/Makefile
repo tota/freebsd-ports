@@ -17,7 +17,7 @@ RUN_DEPENDS=	R-magrittr>0:${PORTSDIR}/devel/R-magrittr \
 		R-NMF>0:${PORTSDIR}/math/R-NMF \
 		R-irlba>0:${PORTSDIR}/math/R-irlba
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 USE_GNOME=	libxml2
 
 .include <bsd.port.pre.mk>

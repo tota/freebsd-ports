@@ -15,7 +15,7 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	R-Rcpp>=0.11.4.6:${PORTSDIR}/devel/R-Rcpp \
 		R-BH>0:${PORTSDIR}/devel/R-BH
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|bin/bash|bin/sh|' ${WRKSRC}/configure

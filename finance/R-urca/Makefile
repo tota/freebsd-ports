@@ -11,6 +11,6 @@ COMMENT=	Unit root and cointegration tests for time series data
 
 LICENSE=	GPLv2+
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

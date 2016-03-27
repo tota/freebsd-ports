@@ -13,6 +13,6 @@ COMMENT=	R SVG graphics device
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

@@ -14,6 +14,6 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	R-plyr>0:${PORTSDIR}/devel/R-plyr
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

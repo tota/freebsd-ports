@@ -11,6 +11,6 @@ COMMENT=	Class for vectors of 1-bit booleans
 
 LICENSE=	GPLv2
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

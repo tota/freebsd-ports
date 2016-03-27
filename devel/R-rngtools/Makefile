@@ -13,6 +13,6 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	R-pkgmaker>=0.20:${PORTSDIR}/devel/R-pkgmaker
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-digest>=0:${PORTSDIR}/security/R-digest \
 		R-reshape2>=0:${PORTSDIR}/devel/R-reshape2 \
 		R-scales>=0.3.0:${PORTSDIR}/graphics/R-scales
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-car>=2.0.1:${PORTSDIR}/math/R-car \
 		R-Formula>=0.2.0:${PORTSDIR}/math/R-Formula \
 		R-zoo>=0:${PORTSDIR}/math/R-zoo
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

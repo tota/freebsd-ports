@@ -15,6 +15,6 @@ RUN_DEPENDS=	R-zoo>=0:${PORTSDIR}/math/R-zoo \
 		R-strucchange>0:${PORTSDIR}/finance/R-strucchange \
 		R-sandwich>=2.2.4:${PORTSDIR}/math/R-sandwich
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

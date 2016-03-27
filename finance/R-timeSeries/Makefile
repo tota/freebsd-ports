@@ -17,6 +17,6 @@ TEST_DEPENDS=	R-RUnit>=0:${PORTSDIR}/devel/R-RUnit \
 		R-xts>=0:${PORTSDIR}/math/R-xts \
 		R-PerformanceAnalytics>=0:${PORTSDIR}/finance/R-PerformanceAnalytics
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

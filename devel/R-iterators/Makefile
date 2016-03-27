@@ -11,6 +11,6 @@ COMMENT=	Iterator construct for R
 
 LICENSE=	APACHE20
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

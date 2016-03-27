@@ -26,6 +26,6 @@ RUN_DEPENDS=	R-Rcpp>=0.11:${PORTSDIR}/devel/R-Rcpp \
 		R-lazyeval>=0.1.10:${PORTSDIR}/math/R-lazyeval \
 		R-assertthat>=0:${PORTSDIR}/math/R-assertthat
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

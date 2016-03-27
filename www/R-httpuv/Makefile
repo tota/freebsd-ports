@@ -18,6 +18,6 @@ LICENSE_PERMS_NODE=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 RUN_DEPENDS=	R-Rcpp>=0.11.0:${PORTSDIR}/devel/R-Rcpp
 
 MAKE_ENV=	MAKE=${MAKE_CMD}
-USES=		r-packages gmake
+USES=		r-packages:auto-plist gmake
 
 .include <bsd.port.mk>

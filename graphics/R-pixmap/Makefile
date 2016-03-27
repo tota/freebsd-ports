@@ -12,6 +12,6 @@ COMMENT=	Bitmap Images ("Pixel Maps")
 
 LICENSE=	GPLv2
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

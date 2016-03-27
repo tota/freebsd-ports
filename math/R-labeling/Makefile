@@ -12,6 +12,6 @@ COMMENT=	Provides a range of axis labeling algorithms
 
 LICENSE=	MIT
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

@@ -13,6 +13,6 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	R-iterators>=1.0.0:${PORTSDIR}/devel/R-iterators
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

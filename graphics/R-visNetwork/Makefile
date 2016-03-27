@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-htmlwidgets>0:${PORTSDIR}/www/R-htmlwidgets \
 		R-jsonlite>0:${PORTSDIR}/converters/R-jsonlite \
 		R-magrittr>0:${PORTSDIR}/devel/R-magrittr
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

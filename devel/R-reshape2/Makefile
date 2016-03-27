@@ -16,6 +16,6 @@ RUN_DEPENDS=	R-plyr>=1.8.1:${PORTSDIR}/devel/R-plyr \
 		R-stringr>0:${PORTSDIR}/textproc/R-stringr \
 		R-Rcpp>0:${PORTSDIR}/devel/R-Rcpp
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

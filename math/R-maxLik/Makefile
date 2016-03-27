@@ -17,6 +17,6 @@ BUILD_DEPENDS=	R-miscTools>=0.6.8:${PORTSDIR}/math/R-miscTools \
 RUN_DEPENDS=	R-miscTools>=0.6.8:${PORTSDIR}/math/R-miscTools \
 		R-sandwich>=0:${PORTSDIR}/math/R-sandwich
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

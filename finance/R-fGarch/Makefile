@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-timeDate>0:${PORTSDIR}/finance/R-timeDate \
 		R-timeSeries>0:${PORTSDIR}/finance/R-timeSeries \
 		R-fBasics>=2100.78:${PORTSDIR}/finance/R-fBasics
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

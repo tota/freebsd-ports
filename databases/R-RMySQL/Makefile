@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	R-DBI>=0.3.1:${PORTSDIR}/databases/R-DBI
 
 USE_MYSQL=	yes
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 post-patch:
 	@${REINPLACE_CMD} -e '/bin\//s|bash|sh|' ${WRKSRC}/configure

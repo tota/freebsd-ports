@@ -13,6 +13,6 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	R-bitops>0:${PORTSDIR}/devel/R-bitops
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

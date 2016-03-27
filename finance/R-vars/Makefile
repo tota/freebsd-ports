@@ -18,6 +18,6 @@ RUN_DEPENDS=	R-strucchange>0:${PORTSDIR}/finance/R-strucchange \
 		R-lmtest>=0.9.26:${PORTSDIR}/finance/R-lmtest \
 		R-sandwich>=2.2.4:${PORTSDIR}/math/R-sandwich
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

@@ -18,6 +18,6 @@ RUN_DEPENDS=	R-Formula>=0.2.0:${PORTSDIR}/math/R-Formula \
 		R-car>0:${PORTSDIR}/math/R-car \
 		R-lmtest>0:${PORTSDIR}/finance/R-lmtest
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

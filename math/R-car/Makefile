@@ -15,6 +15,6 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	R-pbkrtest>=0.3.2:${PORTSDIR}/math/R-pbkrtest \
 		R-quantreg>0:${PORTSDIR}/math/R-quantreg
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

@@ -17,6 +17,6 @@ BUILD_DEPENDS=	R-Rcpp>=0.11:${PORTSDIR}/devel/R-Rcpp \
 RUN_DEPENDS=	R-Rcpp>=0.11:${PORTSDIR}/devel/R-Rcpp \
 		R-RcppArmadillo>=0:${PORTSDIR}/math/R-RcppArmadillo
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

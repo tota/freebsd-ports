@@ -11,7 +11,7 @@ COMMENT=	Toolkit for Encryption, Signatures and Certificates Based on OpenSSL
 
 LICENSE=	MIT
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.pre.mk>
 

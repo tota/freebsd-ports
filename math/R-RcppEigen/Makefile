@@ -14,6 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	R-Rcpp>=0.11.0:${PORTSDIR}/devel/R-Rcpp
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

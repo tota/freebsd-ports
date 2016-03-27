@@ -17,6 +17,6 @@ RUN_DEPENDS=	hs-pandoc>=1.12.3:${PORTSDIR}/textproc/hs-pandoc \
 		R-htmltools>=0.2.4:${PORTSDIR}/textproc/R-htmltools \
 		R-caTools>0:${PORTSDIR}/devel/R-caTools
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

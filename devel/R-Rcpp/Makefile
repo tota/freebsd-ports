@@ -11,7 +11,7 @@ COMMENT=	Seamless R and C++ Integration
 
 LICENSE=	GPLv2+
 
-USES=		r-packages shebangfix
+USES=		r-packages:auto-plist shebangfix
 SHEBANG_FILES=	inst/examples/*/*.sh \
 		inst/examples/*/*.r \
 		inst/examples/*/*.R

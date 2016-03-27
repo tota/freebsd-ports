@@ -19,6 +19,6 @@ RUN_DEPENDS=	R-evaluate>=0.8:${PORTSDIR}/devel/R-evaluate \
 		R-stringr>=0.6:${PORTSDIR}/textproc/R-stringr \
 		R-yaml>=2.1.5:${PORTSDIR}/textproc/R-yaml
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

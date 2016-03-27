@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-dplyr>=0.4:${PORTSDIR}/math/R-dplyr \
 		R-magrittr>0:${PORTSDIR}/devel/R-magrittr \
 		R-Rcpp>0:${PORTSDIR}/devel/R-Rcpp
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

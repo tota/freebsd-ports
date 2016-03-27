@@ -11,6 +11,6 @@ COMMENT=	Provides an infrastructure for the management of survey data
 
 LICENSE=	GPLv2
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

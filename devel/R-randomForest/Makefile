@@ -11,6 +11,6 @@ COMMENT=	Classification based on a forest of trees using random inputs
 
 RUN_DEPENDS=	R-RColorBrewer>=1.0.5_6:${PORTSDIR}/graphics/R-RColorBrewer
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

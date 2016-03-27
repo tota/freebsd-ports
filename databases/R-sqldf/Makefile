@@ -20,6 +20,6 @@ BUILD_DEPENDS=	R-proto>=0.3.9.2_6:${PORTSDIR}/devel/R-proto \
 		R-RSQLite.extfuns>=0.0.1:${PORTSDIR}/databases/R-RSQLite.extfuns
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

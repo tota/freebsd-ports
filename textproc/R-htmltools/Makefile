@@ -14,6 +14,6 @@ LICENSE=	GPLv2+
 RUN_DEPENDS=	R-digest>0:${PORTSDIR}/security/R-digest \
 		R-Rcpp>0:${PORTSDIR}/devel/R-Rcpp
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

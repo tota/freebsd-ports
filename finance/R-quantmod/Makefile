@@ -15,6 +15,6 @@ RUN_DEPENDS=	R-xts>=0.9.0:${PORTSDIR}/math/R-xts \
 		R-zoo>0:${PORTSDIR}/math/R-zoo \
 		R-TTR>=0.2:${PORTSDIR}/finance/R-TTR
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

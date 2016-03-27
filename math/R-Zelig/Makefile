@@ -39,6 +39,6 @@ RUN_DEPENDS=	R-AER>=0:${PORTSDIR}/finance/R-AER \
 		R-geepack>=0:${PORTSDIR}/math/R-geepack \
 		R-survey>=0:${PORTSDIR}/math/R-survey
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

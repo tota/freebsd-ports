@@ -13,6 +13,6 @@ LICENSE=	GPLv2+
 
 RUN_DEPENDS=	R-sp>=1.0.11:${PORTSDIR}/math/R-sp
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

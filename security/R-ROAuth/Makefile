@@ -14,6 +14,6 @@ LICENSE=	ART20
 RUN_DEPENDS=	R-RCurl>0:${PORTSDIR}/ftp/R-RCurl \
 		R-digest>0:${PORTSDIR}/security/R-digest
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

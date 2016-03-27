@@ -15,6 +15,6 @@ LICENSE=	BSD
 RUN_DEPENDS=	R-TTR>0:${PORTSDIR}/finance/R-TTR \
 		R-forecast>0:${PORTSDIR}/math/R-forecast
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

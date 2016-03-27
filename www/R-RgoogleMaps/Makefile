@@ -15,6 +15,6 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	R-png>0:${PORTSDIR}/graphics/R-png \
 		R-RJSONIO>0:${PORTSDIR}/converters/R-RJSONIO
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

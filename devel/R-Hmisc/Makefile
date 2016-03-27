@@ -11,6 +11,6 @@ COMMENT=	Harrell Miscellaneous functions useful for data analysis
 
 LICENSE=	GPLv2
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

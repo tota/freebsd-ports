@@ -13,6 +13,6 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-bit>=1.1.12:${PORTSDIR}/devel/R-bit
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

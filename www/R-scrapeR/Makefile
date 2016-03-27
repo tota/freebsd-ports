@@ -13,6 +13,6 @@ COMMENT=	Tools for Scraping Data from HTML and XML Documents
 RUN_DEPENDS=	R-XML>0:${PORTSDIR}/textproc/R-XML \
 		R-RCurl>0:${PORTSDIR}/ftp/R-RCurl
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

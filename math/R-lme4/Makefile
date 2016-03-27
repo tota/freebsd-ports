@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-Rcpp>=0.10.5:${PORTSDIR}/devel/R-Rcpp \
 		R-nloptr>=1.0.4:${PORTSDIR}/math/R-nloptr \
 		R-RcppEigen>0:${PORTSDIR}/math/R-RcppEigen
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

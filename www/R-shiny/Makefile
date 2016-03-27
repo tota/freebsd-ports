@@ -20,6 +20,6 @@ RUN_DEPENDS=	R-httpuv>=1.3.3:${PORTSDIR}/www/R-httpuv \
 		R-htmltools>=0.3:${PORTSDIR}/textproc/R-htmltools \
 		R-R6>=2.0:${PORTSDIR}/devel/R-R6
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

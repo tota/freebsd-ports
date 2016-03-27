@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-registry>0:${PORTSDIR}/devel/R-registry \
 		R-stringr>0:${PORTSDIR}/textproc/R-stringr \
 		R-xtable>0:${PORTSDIR}/textproc/R-xtable
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

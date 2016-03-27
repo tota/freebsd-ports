@@ -17,6 +17,6 @@ RUN_DEPENDS=	R-ggplot2>0:${PORTSDIR}/graphics/R-ggplot2 \
 		R-plyr>0:${PORTSDIR}/devel/R-plyr \
 		R-reshape2>0:${PORTSDIR}/devel/R-reshape2
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

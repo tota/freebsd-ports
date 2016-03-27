@@ -20,6 +20,6 @@ RUN_DEPENDS=	R-zoo>0:${PORTSDIR}/math/R-zoo \
 		R-colorspace>0:${PORTSDIR}/graphics/R-colorspace \
 		R-RcppArmadillo>=0.2.35:${PORTSDIR}/math/R-RcppArmadillo
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

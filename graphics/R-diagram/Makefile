@@ -14,6 +14,6 @@ LICENSE_COMB=	dual
 
 RUN_DEPENDS=	R-shape>0:${PORTSDIR}/graphics/R-shape
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

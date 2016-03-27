@@ -13,6 +13,6 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-mime>=0.3:${PORTSDIR}/misc/R-mime
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

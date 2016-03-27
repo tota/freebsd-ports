@@ -14,6 +14,6 @@ LICENSE=	LGPL20
 BUILD_DEPENDS=	R-DBI>=0.2.5:${PORTSDIR}/databases/R-DBI
 RUN_DEPENDS=	R-DBI>=0.2.5:${PORTSDIR}/databases/R-DBI
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

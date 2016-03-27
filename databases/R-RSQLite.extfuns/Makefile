@@ -15,6 +15,6 @@ LICENSE=	APACHE20
 BUILD_DEPENDS=	R-RSQLite>=0.11.1:${PORTSDIR}/databases/R-RSQLite
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

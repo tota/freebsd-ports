@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-gtools>0:${PORTSDIR}/devel/R-gtools
 
-USES=		r-packages perl5 shebangfix
+USES=		r-packages:auto-plist perl5 shebangfix
 USE_PERL5=	run
 
 SHEBANG_FILES=	inst/perl/*.pl

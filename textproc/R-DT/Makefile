@@ -15,6 +15,6 @@ RUN_DEPENDS=	R-htmltools>0:${PORTSDIR}/textproc/R-htmltools \
 		R-htmlwidgets>=0.4:${PORTSDIR}/www/R-htmlwidgets \
 		R-magrittr>0:${PORTSDIR}/devel/R-magrittr
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

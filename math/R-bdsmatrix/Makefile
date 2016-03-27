@@ -12,6 +12,6 @@ COMMENT=	Routines for Block Diagonal Symmetric matrices
 
 LICENSE=	LGPL20
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

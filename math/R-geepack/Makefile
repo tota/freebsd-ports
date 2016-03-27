@@ -11,6 +11,6 @@ COMMENT=	Generalized Estimating Equation Package
 
 LICENSE=	GPLv3
 
-USES=		r-packages
+USES=		r-packages:auto-plist
 
 .include <bsd.port.mk>

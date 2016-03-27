@@ -14,6 +14,6 @@ LICENSE=	GPLv2+
 RUN_DEPENDS=	R-SparseM>0:${PORTSDIR}/math/R-SparseM \
 		R-MatrixModels>0:${PORTSDIR}/math/R-MatrixModels
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

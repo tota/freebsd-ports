@@ -11,6 +11,6 @@ COMMENT=	Misc Functions of the Department of Statistics (e1071), TU Wien
 
 LICENSE=	GPLv2
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>

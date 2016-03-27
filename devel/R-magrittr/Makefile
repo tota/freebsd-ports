@@ -11,6 +11,6 @@ COMMENT=	Forward-Pipe Operator for R
 
 LICENSE=	MIT
 
-USES=	r-packages
+USES=	r-packages:auto-plist
 
 .include <bsd.port.mk>
