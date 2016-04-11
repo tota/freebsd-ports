@@ -3,18 +3,17 @@
 
 PORTNAME=	Rmpfr
 DISTVERSION=	0.6-0
-#PORTREVISION=
-CATEGORIES=	devel
+CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
 MAINTAINER=	jau@iki.fi
-COMMENT=	An R wrapper for the mpfr multiple precision library
+COMMENT=	R wrapper for the mpfr multiple precision library
+
+LICENSE=	GPLv2+
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr
-
-LICENSE=	GPLv2 GPLv3
-LICENSE_COMB=	dual
+RUN_DEPENDS=	R-cran-gmp>=0.5.8:math/R-cran-gmp
 
 USES=	cran:auto-plist
 
