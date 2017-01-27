@@ -22,6 +22,8 @@ post-patch:
 	@${RM} ${WRKSRC}/CMakeCache.txt
 	@${REINPLACE_CMD} -e '/lib\/silent_bob/s|/usr|${PREFIX}|' \
 		${WRKSRC}/src/init.cxx
+	@${REINPLACE_CMD} -e 's|__linux|__FreeBSD__|' \
+		${WRKSRC}/src/fs.cxx
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
