@@ -5381,6 +5381,7 @@
     SUBDIR += rubygem-devise-rails50
     SUBDIR += rubygem-directory_watcher
     SUBDIR += rubygem-ditz
+    SUBDIR += rubygem-diva
     SUBDIR += rubygem-docile
     SUBDIR += rubygem-drydock
     SUBDIR += rubygem-dynflow
