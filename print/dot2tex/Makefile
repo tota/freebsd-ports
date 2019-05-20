@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	dot2tex
-PORTVERSION=	2.9.0
+PORTVERSION=	2.11.3
 CATEGORIES=	print
 
 MAINTAINER=	tota@FreeBSD.org
@@ -14,10 +14,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyparsing>=1.4.8:devel/py-pyparsing@${PY_FLAVOR} \
 		dot:graphics/graphviz
 
-NO_ARCH=	yes
-USES=	python:2.7
-USE_PYTHON=	distutils autoplist
+USES=	python
+USE_PYTHON=	autoplist concurrent distutils optsuffix
 USE_GITHUB=	yes
 GH_ACCOUNT=	kjellmf
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>
