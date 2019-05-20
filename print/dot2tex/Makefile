@@ -4,6 +4,7 @@
 PORTNAME=	dot2tex
 PORTVERSION=	2.11.3
 CATEGORIES=	print
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Graphviz to LaTeX converter
@@ -15,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyparsing>=1.4.8:devel/py-pyparsing@${PY_FLA
 		dot:graphics/graphviz
 
 USES=	python
-USE_PYTHON=	autoplist concurrent distutils optsuffix
+USE_PYTHON=	autoplist distutils
 USE_GITHUB=	yes
 GH_ACCOUNT=	kjellmf
 
