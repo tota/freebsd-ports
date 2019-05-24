@@ -33,7 +33,6 @@
     SUBDIR += deforaos-pdfviewer
     SUBDIR += derelict-ft
     SUBDIR += detex
-    SUBDIR += dot2tex
     SUBDIR += dvi2tty
     SUBDIR += dvips2ascii
     SUBDIR += dvisvg
@@ -180,6 +179,7 @@
     SUBDIR += pslib
     SUBDIR += pstotext
     SUBDIR += psutils
+    SUBDIR += py-dot2tex
     SUBDIR += py-fonttools
     SUBDIR += py-fpdf
     SUBDIR += py-pdf
