@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	geometry
-DISTVERSION=	0.3-6
-PORTREVISION=	2
+DISTVERSION=	0.4.1.1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -11,12 +10,14 @@ MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Mesh Generation and Surface Tesselation
 
 LICENSE=	GPLv3
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cran:auto-plist,compiles
-
-CRAN_DEPENDS=	R-cran-magic>0:math/R-cran-magic
+CRAN_DEPENDS=	R-cran-magic>0:math/R-cran-magic \
+		R-cran-Rcpp>0:devvel/R-cran-Rcpp \
+		R-cran-lpSolve:math/R-cran-lpSolve \
+		R-cran-RcppProgress:devel/R-cran-RcppProgress
 BUILD_DEPENDS=	${CRAN_DEPENDS}
 RUN_DEPENDS=	${CRAN_DEPENDS}
+
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>
