@@ -410,6 +410,7 @@
     SUBDIR += py-qiskit-terra
     SUBDIR += py-qspin
     SUBDIR += py-quantities
+    SUBDIR += py-resp
     SUBDIR += py-rmf
     SUBDIR += py-rmsd
     SUBDIR += py-ruffus
