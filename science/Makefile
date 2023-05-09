@@ -283,6 +283,7 @@
     SUBDIR += py-OpenFermion-Dirac
     SUBDIR += py-OpenFermion-PySCF
     SUBDIR += py-OpenMC
+    SUBDIR += py-Psikit
     SUBDIR += py-PubChemPy
     SUBDIR += py-PyFR
     SUBDIR += py-PyNE
